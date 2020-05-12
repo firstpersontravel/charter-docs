@@ -16,8 +16,8 @@ function Home() {
       <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <img style={{ maxWidth: '100px' }} src={"img/logo.png"} />
-          <h1 className="hero__title">Welcome to Charter!</h1>
-          <p className="hero__subtitle">Your toolkit for creating, operating, and scaling immersive experiences.</p>
+          <h1 className="hero__title">Thanks for using Charter!</h1>
+          <p className="hero__subtitle">We're excited to be a part of bringing your experience to life.</p>
           <div className={styles.buttons}>
             <Link
               className={classnames(
@@ -25,7 +25,7 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/welcome')}>
-              Get Started
+              Read the docs
             </Link>
           </div>
         </div>
