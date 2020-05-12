@@ -15,9 +15,7 @@ A description of one aspect of the trip outcome. A use is to easily summarize pl
 | **Scene** | [Scene](/docs/reference/resources#scene) | The scene at which the outcome of this achievement is expected to be known. Before this scene, the achivement will be listed as 'pending'. |
 | **Style** | `completion` or `choice` | "Completion" achievements are active if the test resolves to true. "Choice" achievements can have multiple titles based on the evaluation of the test. |
 | Test | [Condition](/docs/reference/conditions) | The value to test for to determine if this achievement has been activated. |
-| **Titles** | Dictionary | Text values to display based on the result of the achievement test. |
-| Titles → Keys | [String](/docs/reference/fieldtypes#string) |  |
-| Titles → Values | [String](/docs/reference/fieldtypes#string) |  |
+| **Titles** | [String](/docs/reference/fieldtypes#string) to [String](/docs/reference/fieldtypes#string) | Text values to display based on the result of the achievement test. |
 
 
 ## Checkpoint
@@ -28,12 +26,8 @@ A saved place marker for quickly resetting a trip while testing.
 | Field | Type | Description |
 | - | - | - |
 | **Scene** | [Scene](/docs/reference/resources#scene) | The scene that this checkpoint will restore the trip to. |
-| Pages | Dictionary | Pages to start each role at. |
-| Pages → Keys | [Role](/docs/reference/resources#role) |  |
-| Pages → Values | [Page](/docs/reference/resources#page) |  |
-| Values | Dictionary | Values to pre-set. |
-| Values → Keys | [Name](/docs/reference/fieldtypes#name) |  |
-| Values → Values | [Simple value](/docs/reference/fieldtypes#simple-value) |  |
+| Pages | [Role](/docs/reference/resources#role) to [Page](/docs/reference/resources#page) | Pages to start each role at. |
+| Values | [Name](/docs/reference/fieldtypes#name) to [Simple value](/docs/reference/fieldtypes#simple-value) | Values to pre-set. |
 
 
 ## Clip
@@ -217,18 +211,10 @@ A variation in trip values, including timing, values, and waypoint options.
 | - | - | - |
 | Default | [Boolean](/docs/reference/fieldtypes#boolean) |  |
 | Section | [String](/docs/reference/fieldtypes#string) |  |
-| Initial values | Dictionary |  |
-| Initial values → Keys | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
-| Initial values → Values | [Simple value](/docs/reference/fieldtypes#simple-value) |  |
-| Customizations | Dictionary |  |
-| Customizations → Keys | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
-| Customizations → Values | [Simple value](/docs/reference/fieldtypes#simple-value) |  |
-| Waypoint options | Dictionary |  |
-| Waypoint options → Keys | [Waypoint](/docs/reference/resources#waypoint) |  |
-| Waypoint options → Values | [Name](/docs/reference/fieldtypes#name) |  |
-| Schedule | Dictionary |  |
-| Schedule → Keys | [Time](/docs/reference/resources#time) |  |
-| Schedule → Values | [Time shorthand](/docs/reference/fieldtypes#time-shorthand) | A time, e.g. 3:00pm, 5:30am, +1d 4:15pm, +2d 12:00pm |
+| Initial values | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) to [Simple value](/docs/reference/fieldtypes#simple-value) |  |
+| Customizations | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) to [Simple value](/docs/reference/fieldtypes#simple-value) |  |
+| Waypoint options | [Waypoint](/docs/reference/resources#waypoint) to [Name](/docs/reference/fieldtypes#name) |  |
+| Schedule | [Time](/docs/reference/resources#time) to [Time shorthand](/docs/reference/fieldtypes#time-shorthand) |  |
 
 
 ## Waypoint
@@ -238,12 +224,9 @@ A location used by the trip. Each waypoint can have multiple options that can be
 
 | Field | Type | Description |
 | - | - | - |
-| Options | [Object] | A list of locations that this waypoint could refer to. |
-| Options → Items | Object |  |
-| **Options → Items → Address** | [Address](/docs/reference/fieldtypes#address) | The address of the location. |
-| Options → Items → Title | [String](/docs/reference/fieldtypes#string) |  |
-| Options → Items → Values | Dictionary |  |
-| Options → Items → Values → Keys | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
-| Options → Items → Values → Values | [Simple value](/docs/reference/fieldtypes#simple-value) |  |
+| Options | List | A list of locations that this waypoint could refer to. |
+| **Options → Address** | [Address](/docs/reference/fieldtypes#address) | The address of the location. |
+| Options → Title | [String](/docs/reference/fieldtypes#string) |  |
+| Options → Values | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) to [Simple value](/docs/reference/fieldtypes#simple-value) |  |
 
 

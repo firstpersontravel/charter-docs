@@ -32,10 +32,9 @@ Displays a multiple choice option. When selected by a user, the curresponding va
 | - | - | - |
 | **Text** | [String](/docs/reference/fieldtypes#string) | Visible title for the choice. |
 | **Value ref** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
-| **Choices** | [Object] |  |
-| Choices → Items | Object |  |
-| **Choices → Items → Value** | [String](/docs/reference/fieldtypes#string) |  |
-| **Choices → Items → Text** | [String](/docs/reference/fieldtypes#string) |  |
+| **Choices** | List |  |
+| **Choices → Value** | [String](/docs/reference/fieldtypes#string) |  |
+| **Choices → Text** | [String](/docs/reference/fieldtypes#string) |  |
 
 
 ## Content browse

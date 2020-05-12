@@ -35,10 +35,9 @@ A conditional branch.
 | - | - | - |
 | **If** | [Condition](/docs/reference/conditions) |  |
 | Actions | [[Action](/docs/reference/actions)] |  |
-| Elseifs | [Object] |  |
-| Elseifs → Items | Object |  |
-| Elseifs → Items → If | [Condition](/docs/reference/conditions) |  |
-| Elseifs → Items → Actions | [[Action](/docs/reference/actions)] |  |
+| Elseifs | List |  |
+| Elseifs → If | [Condition](/docs/reference/conditions) |  |
+| Elseifs → Actions | [[Action](/docs/reference/actions)] |  |
 | Else | [[Action](/docs/reference/actions)] |  |
 
 

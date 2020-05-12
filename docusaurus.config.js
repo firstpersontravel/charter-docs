@@ -14,6 +14,16 @@ module.exports = {
         src: 'img/feather.png',
       },
       links: [{
+        to: 'docs/welcome',
+        activeBasePath: 'docs/welcome',
+        label: 'Welcome',
+        position: 'left',
+      }, {
+        to: 'docs/tutorials',
+        activeBasePath: 'docs/tutorials',
+        label: 'Tutorials',
+        position: 'left',
+      }, {
         to: 'docs/reference/resources',
         activeBasePath: 'docs',
         label: 'Reference',

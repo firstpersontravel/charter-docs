@@ -7,14 +7,14 @@ sidebar_label: Field Types
 Fields are the underlying data elements of each object in your script. Each is validated in a different way.
 ## Address
 
-A geocodable address, including city, state and ZIP/postal code.
+A geocodable address, including city, state and ZIP/postal code. For example: "111 Main Street, San Francisco CA 94110".
 
 
 
 
 ## Boolean
 
-True or false.
+A simple true or false value.
 
 
 
@@ -28,28 +28,28 @@ Latitude/longitude coordinates.
 
 ## Email
 
-An email address
+An email address. For example, "agency@firstperson.travel".
 
 
 
 
-## Enum
+## Enumeration
 
-A set of a few possible values.
+A field allowing a choice between a limited set of values. The specific set of options will be different for each field and documented in that field.
 
 
 
 
 ## Integer
 
-An integer.
+A simple integer value: 0, 100, -50, etc.
 
 
 
 
 ## Lookup
 
-A machine-readable name used for lookinig up variables. Only letters, numbers, dashes or underscores are allowed. Periods may be used to look up children of data dictionaries: for example, "inductee.link" or "current.directive".
+A machine-readable name used for looking up variables. Only letters, numbers, dashes or underscores are allowed. Periods may be used to look up children of data dictionaries: for example, "inductee.link" or "current.directive".
 
 
 
@@ -91,14 +91,14 @@ A machine-readable name used for naming variables. Only letters, numbers, or und
 
 ## Simple value
 
-A simple string, number, or "true" or "false"
+A field that can be a string, number, or "true" or "false".
 
 
 
 
 ## String
 
-Arbitrary text.
+Arbitrary text, usually for display to a participant.
 
 
 
