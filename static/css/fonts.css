@@ -1,0 +1,84 @@
+/* **** Mark Pro **** */
+
+/* medium */
+@font-face {
+  font-family: "Mark Pro";
+  src: url('../fonts/mark-pro/medium/font.eot');
+  src: url('../fonts/mark-pro/medium/font.woff2') format('woff2'),
+       url('../fonts/mark-pro/medium/font.woff') format('woff'),
+       url('../fonts/mark-pro/medium/font.ttf') format('truetype'),
+       url('../fonts/mark-pro/medium/font.eot') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mark Pro";
+  src: url('../fonts/mark-pro/medium-italic/font.eot');
+  src: url('../fonts/mark-pro/medium-italic/font.woff2') format('woff2'),
+       url('../fonts/mark-pro/medium-italic/font.woff') format('woff'),
+       url('../fonts/mark-pro/medium-italic/font.ttf') format('truetype'),
+       url('../fonts/mark-pro/medium-italic/font.eot') format('embedded-opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mark Pro";
+  src: url('../fonts/mark-pro/bold/font.eot');
+  src: url('../fonts/mark-pro/bold/font.woff2') format('woff2'),
+       url('../fonts/mark-pro/bold/font.woff') format('woff'),
+       url('../fonts/mark-pro/bold/font.ttf') format('truetype'),
+       url('../fonts/mark-pro/bold/font.eot') format('embedded-opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mark Pro";
+  src: url('../fonts/mark-pro/bold-italic/font.eot');
+  src: url('../fonts/mark-pro/bold-italic/font.woff2') format('woff2'),
+       url('../fonts/mark-pro/bold-italic/font.woff') format('woff'),
+       url('../fonts/mark-pro/bold-italic/font.ttf') format('truetype'),
+       url('../fonts/mark-pro/bold-italic/font.eot') format('embedded-opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* heavy */
+@font-face {
+  font-family: "Mark Pro";
+  src: url('../fonts/mark-pro/heavy/font.eot');
+  src: url('../fonts/mark-pro/heavy/font.woff2') format('woff2'),
+       url('../fonts/mark-pro/heavy/font.woff') format('woff'),
+       url('../fonts/mark-pro/heavy/font.ttf') format('truetype'),
+       url('../fonts/mark-pro/heavy/font.eot') format('embedded-opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mark Pro";
+  src: url('../fonts/mark-pro/heavy-italic/font.eot');
+  src: url('../fonts/mark-pro/heavy-italic/font.woff2') format('woff2'),
+       url('../fonts/mark-pro/heavy-italic/font.woff') format('woff'),
+       url('../fonts/mark-pro/heavy-italic/font.ttf') format('truetype'),
+       url('../fonts/mark-pro/heavy-italic/font.eot') format('embedded-opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* **** Recoleta **** */
+
+/* semi-bold */
+@font-face {
+  font-family: "Recoleta";
+  src: url('../fonts/recoleta/semi-bold/font.eot');
+  src: url('../fonts/recoleta/semi-bold/font.woff2') format('woff2'),
+       url('../fonts/recoleta/semi-bold/font.woff') format('woff'),
+       url('../fonts/recoleta/semi-bold/font.ttf') format('truetype'),
+       url('../fonts/recoleta/semi-bold/font.eot') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+}

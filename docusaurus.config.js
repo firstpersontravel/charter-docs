@@ -1,17 +1,17 @@
 module.exports = {
-  title: 'Charter Documentation',
-  tagline: 'Reference docs for Charter',
+  title: 'Using Charter',
+  tagline: 'Reference Docs for Charter',
   url: 'https://charter-docs.firstperson.travel',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/feather.png',
   organizationName: 'firstpersontravel',
   projectName: 'charter-docs',
   themeConfig: {
     navbar: {
-      title: 'Charter Documentation',
+      title: 'Using Charter',
       logo: {
         alt: 'Charter Docs',
-        src: 'img/logo.svg',
+        src: 'img/feather.png',
       },
       links: [{
         to: 'docs/reference/resources',
@@ -27,31 +27,28 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [{
-        title: 'Docs',
+        title: 'Charter Docs',
         items: [{
+          label: 'Tutorials',
+          to: 'docs/tutorials',
+        }, {
           label: 'Reference',
           to: 'docs/reference/resources',
         }],
       }, {
-        title: 'Community',
+        title: 'More Resources',
         items: [{
-          label: 'Stack Overflow',
-          href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          label: 'About Charter',
+          href: 'http://about.firstperson.travel/',
         }, {
-          label: 'Discord',
-          href: 'https://discordapp.com/invite/docusaurus',
-        }, {
-          label: 'Twitter',
-          href: 'https://twitter.com/docusaurus',
-        }],
-      }, {
-        title: 'More',
-        items: [{
           label: 'Updates',
           to: 'blog',
-        }, {
-          label: 'GitHub',
-          href: 'https://github.com/firstpersontravel/charter-docs',
+        }],
+      }, {
+        title: 'First Person Travel',
+        items: [{
+          label: 'Our Trips',
+          href: 'http://www.firstperson.travel/',
         }],
       }],
       copyright: `Copyright © ${new Date().getFullYear()} First Person Travel`,
@@ -76,4 +73,7 @@ module.exports = {
       },
     }],
   ],
+  stylesheets: [
+    '/css/fonts.css'
+  ]
 };

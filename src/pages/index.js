@@ -13,17 +13,18 @@ function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <header className={classnames('hero hero--primary', styles.heroBanner)}>
+      <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <img style={{ maxWidth: '100px' }} src={"img/logo.png"} />
+          <h1 className="hero__title">Welcome to Charter!</h1>
+          <p className="hero__subtitle">Your toolkit for creating, operating, and scaling immersive experiences.</p>
           <div className={styles.buttons}>
             <Link
               className={classnames(
-                'button button--outline button--secondary button--lg',
+                'button button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/doc1')}>
+              to={useBaseUrl('docs/welcome')}>
               Get Started
             </Link>
           </div>

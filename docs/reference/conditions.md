@@ -12,8 +12,7 @@ Condition passes only if all the subconditions pass.
 
 | Field | Type | Description |
 | - | - | - |
-| Items | list |  |
-| Items → Items | [Condition](conditions) |  |
+| Items | [[Condition](/docs/reference/conditions)] |  |
 
 
 ## Clip answer is
@@ -23,7 +22,7 @@ Condition passes if the response to the clip being answered contains any part of
 
 | Field | Type | Description |
 | - | - | - |
-| Response | string |  |
+| **Response** | [String](/docs/reference/fieldtypes#string) |  |
 
 
 ## Not
@@ -33,7 +32,7 @@ Condition passes if the subcondition does not pass.
 
 | Field | Type | Description |
 | - | - | - |
-| Item | [Condition](conditions) |  |
+| **Item** | [Condition](/docs/reference/conditions) |  |
 
 
 ## Or
@@ -43,8 +42,7 @@ Condition passes if any of the subconditions pass.
 
 | Field | Type | Description |
 | - | - | - |
-| Items | list |  |
-| Items → Items | [Condition](conditions) |  |
+| Items | [[Condition](/docs/reference/conditions)] |  |
 
 
 ## Submission contains
@@ -54,7 +52,7 @@ Condition passes if the submission contains any part of the 'part' parameter.
 
 | Field | Type | Description |
 | - | - | - |
-| Part | string |  |
+| **Part** | [String](/docs/reference/fieldtypes#string) |  |
 
 
 ## Text contains
@@ -64,7 +62,7 @@ Condition passes if the content to the text contains any part of the 'part' para
 
 | Field | Type | Description |
 | - | - | - |
-| Part | string |  |
+| **Part** | [String](/docs/reference/fieldtypes#string) |  |
 
 
 ## Text is affirmative
@@ -81,8 +79,8 @@ Condition passes if the value in 'string_ref' contains the part in 'part_ref'. I
 
 | Field | Type | Description |
 | - | - | - |
-| String ref | lookupable |  |
-| Part ref | lookupable |  |
+| **String ref** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
+| **Part ref** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
 
 
 ## Value equals
@@ -92,8 +90,8 @@ Condition passes if the value in 'ref1' matches the value in 'ref2'. If 'ref1' o
 
 | Field | Type | Description |
 | - | - | - |
-| Ref1 | lookupable |  |
-| Ref2 | lookupable |  |
+| **Ref1** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
+| **Ref2** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
 
 
 ## Value is true
@@ -103,6 +101,6 @@ Condition passes if the value has any entry that is not false.
 
 | Field | Type | Description |
 | - | - | - |
-| Ref | lookupable |  |
+| **Ref** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
 
 

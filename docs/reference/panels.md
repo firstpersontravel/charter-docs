@@ -19,7 +19,7 @@ Displays a button.
 
 | Field | Type | Description |
 | - | - | - |
-| Text | string | Visible label on the button. |
+| **Text** | [String](/docs/reference/fieldtypes#string) | Visible label on the button. |
 | Style | `solo` |  |
 
 
@@ -30,12 +30,12 @@ Displays a multiple choice option. When selected by a user, the curresponding va
 
 | Field | Type | Description |
 | - | - | - |
-| Text | string | Visible title for the choice. |
-| Value ref | simpleAttribute |  |
-| Choices | list |  |
-| Choices → Items | object |  |
-| Choices → Items → Value | string |  |
-| Choices → Items → Text | string |  |
+| **Text** | [String](/docs/reference/fieldtypes#string) | Visible title for the choice. |
+| **Value ref** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
+| **Choices** | [Object] |  |
+| Choices → Items | Object |  |
+| **Choices → Items → Value** | [String](/docs/reference/fieldtypes#string) |  |
+| **Choices → Items → Text** | [String](/docs/reference/fieldtypes#string) |  |
 
 
 ## Content browse
@@ -45,7 +45,7 @@ Displays an index page of content. The user can browse through all visible conte
 
 | Field | Type | Description |
 | - | - | - |
-| Section | string |  |
+| **Section** | [String](/docs/reference/fieldtypes#string) |  |
 
 
 ## Directions
@@ -55,10 +55,10 @@ Displays live directions for the given route.
 
 | Field | Type | Description |
 | - | - | - |
-| Route | [Route](resources#route) |  |
-| Waypoint | [Waypoint](resources#waypoint) |  |
-| Geofence | [Geofence](resources#geofence) |  |
-| Destination name | string |  |
+| Route | [Route](/docs/reference/resources#route) |  |
+| Waypoint | [Waypoint](/docs/reference/resources#waypoint) |  |
+| Geofence | [Geofence](/docs/reference/resources#geofence) |  |
+| Destination name | [String](/docs/reference/fieldtypes#string) |  |
 
 
 ## Image
@@ -78,8 +78,8 @@ Displays a browsable interface of all messages between a set of players.
 
 | Field | Type | Description |
 | - | - | - |
-| As | [Role](resources#role) |  |
-| With | [Role](resources#role) |  |
+| **As** | [Role](/docs/reference/resources#role) |  |
+| **With** | [Role](/docs/reference/resources#role) |  |
 
 
 ## Messages browse
@@ -96,8 +96,8 @@ Displays a numberpad.
 
 | Field | Type | Description |
 | - | - | - |
-| Submit | string |  |
-| Placeholder | string |  |
+| Submit | [String](/docs/reference/fieldtypes#string) |  |
+| Placeholder | [String](/docs/reference/fieldtypes#string) |  |
 
 
 ## Outlet
@@ -114,7 +114,7 @@ Displays a QR Code.
 
 | Field | Type | Description |
 | - | - | - |
-| Qr code | [Qr code](resources#qr-code) |  |
+| **Qr code** | [Qr code](/docs/reference/resources#qr-code) |  |
 
 
 ## Text
@@ -124,8 +124,8 @@ Displays simple text.
 
 | Field | Type | Description |
 | - | - | - |
-| Text | markdown |  |
-| Style | `centered`, `quest` |  |
+| **Text** | [Markdown](/docs/reference/fieldtypes#markdown) |  |
+| Style | `centered` or `quest` |  |
 
 
 ## Text entry
@@ -135,8 +135,8 @@ Displays a text entry field.
 
 | Field | Type | Description |
 | - | - | - |
-| Submit | string |  |
-| Placeholder | string |  |
+| Submit | [String](/docs/reference/fieldtypes#string) |  |
+| Placeholder | [String](/docs/reference/fieldtypes#string) |  |
 
 
 ## Video
@@ -153,7 +153,7 @@ Displays a yes/no choice. When updated, the corresponding value in the trip stat
 
 | Field | Type | Description |
 | - | - | - |
-| Text | string |  |
-| Value ref | simpleAttribute |  |
+| **Text** | [String](/docs/reference/fieldtypes#string) |  |
+| **Value ref** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
 
 

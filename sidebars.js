@@ -11,7 +11,8 @@ module.exports = {
       'reference/actions',
       'reference/events',
       'reference/panels',
-      'reference/conditions'
+      'reference/conditions',
+      'reference/fieldtypes'
     ]
   },
 };
