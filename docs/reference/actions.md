@@ -23,7 +23,7 @@ Send an ephemeral signal to a player. This is deprecated.
 | Field | Type | Description |
 | - | - | - |
 | **Role name** | [Role](/docs/reference/resources#role) | The role to send the adjustment to. |
-| **New value** | [String](/docs/reference/fieldtypes#string) | The adjustment value to send. |
+| **New value** | [Text](/docs/reference/fieldtypes#text) | The adjustment value to send. |
 
 
 ## Conditional
@@ -123,7 +123,7 @@ Send an email from one player to another.
 | - | - | - |
 | **From** | [Inbox](/docs/reference/resources#inbox) | Inbox to send from. |
 | **To** | [Role](/docs/reference/resources#role) | Role to send to. |
-| **Subject** | [String](/docs/reference/fieldtypes#string) | Subject line for the email. |
+| **Subject** | [Text](/docs/reference/fieldtypes#text) | Subject line for the email. |
 | **Body** | [Markdown](/docs/reference/fieldtypes#markdown) | Body of the email. |
 | Cc | [Email](/docs/reference/fieldtypes#email) | Email address to CC. |
 | Bcc | [Email](/docs/reference/fieldtypes#email) | Email address to BCC. |
@@ -149,7 +149,7 @@ Send a text message from one player to another.
 | - | - | - |
 | **From role name** | [Role](/docs/reference/resources#role) | The role to send the message from. |
 | **To role name** | [Role](/docs/reference/resources#role) | The role to send the message to. |
-| **Content** | [String](/docs/reference/fieldtypes#string) | The content of the message to send. |
+| **Content** | [Text](/docs/reference/fieldtypes#text) | The content of the message to send. |
 
 
 ## Send to page

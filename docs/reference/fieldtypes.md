@@ -96,7 +96,7 @@ A field that can be a string, number, or "true" or "false".
 
 
 
-## String
+## Text
 
 Arbitrary text, usually for display to a participant.
 

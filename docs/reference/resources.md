@@ -15,7 +15,7 @@ A description of one aspect of the trip outcome. A use is to easily summarize pl
 | **Scene** | [Scene](/docs/reference/resources#scene) | The scene at which the outcome of this achievement is expected to be known. Before this scene, the achivement will be listed as 'pending'. |
 | **Style** | `completion` or `choice` | "Completion" achievements are active if the test resolves to true. "Choice" achievements can have multiple titles based on the evaluation of the test. |
 | Test | [Condition](/docs/reference/conditions) | The value to test for to determine if this achievement has been activated. |
-| **Titles** | [String](/docs/reference/fieldtypes#string) to [String](/docs/reference/fieldtypes#string) | Text values to display based on the result of the achievement test. |
+| **Titles** | [Text](/docs/reference/fieldtypes#text) to [Text](/docs/reference/fieldtypes#text) | Text values to display based on the result of the achievement test. |
 
 
 ## Checkpoint
@@ -38,11 +38,11 @@ A unit of text or audio that can be played as part of phone calls. A clip can ex
 | Field | Type | Description |
 | - | - | - |
 | **Scene** | [Scene](/docs/reference/resources#scene) | The scene at which this clip will be played. |
-| Transcript | [String](/docs/reference/fieldtypes#string) | The text transcript used to generate audio via speech-to-text. Only required if there is not a media path. |
+| Transcript | [Text](/docs/reference/fieldtypes#text) | The text transcript used to generate audio via speech-to-text. Only required if there is not a media path. |
 | Voice | `alice`, `man` or `woman` | The voice used to generate audio via speech-to-text. Only required if there is not a media path. |
 | Path | [Media](/docs/reference/fieldtypes#media) | Media path for an audio clip to play. |
 | Answer expected | [Boolean](/docs/reference/fieldtypes#boolean) | Is an answer expected for this clip? |
-| Answer hints | [[String](/docs/reference/fieldtypes#string)] | List of suggestions for decoding the voice of the answer. |
+| Answer hints | [[Text](/docs/reference/fieldtypes#text)] | List of suggestions for decoding the voice of the answer. |
 
 
 ## Content page
@@ -53,7 +53,7 @@ A section of static text or media that can be displayed in a user interface.
 | Field | Type | Description |
 | - | - | - |
 | **Interface** | [Interface](/docs/reference/resources#interface) | The parent interface in which this content page is displayed. |
-| **Section** | [String](/docs/reference/fieldtypes#string) | A string indicating which a grouping for this content page. The the `content_browse` panel will show all visible content pages grouped by section. |
+| **Section** | [Text](/docs/reference/fieldtypes#text) | A string indicating which a grouping for this content page. The the `content_browse` panel will show all visible content pages grouped by section. |
 | Active if | [Condition](/docs/reference/conditions) | An optional test to determine if the panel is visible or not. |
 | **Panels** | [[Panel](/docs/reference/panels)] | List of user interface panels. |
 
@@ -98,7 +98,7 @@ A combination of panels that create a user interface for a tablet, phone, or dev
 | Field | Type | Description |
 | - | - | - |
 | **Type** | `simple` or `tabs` | What type of interface to show. Currently just simple or tabs. |
-| Section | [String](/docs/reference/fieldtypes#string) | Section of content pages to use as subpages. |
+| Section | [Text](/docs/reference/fieldtypes#text) | Section of content pages to use as subpages. |
 | Header panels | [[Panel](/docs/reference/panels)] | List of user interface panels to display at the top. |
 
 
@@ -111,7 +111,7 @@ A user interface that can be displayed to a player when the corresponding scene 
 | - | - | - |
 | **Scene** | [Scene](/docs/reference/resources#scene) | The scene during which this page is active. If this scene is not the current scene, the page may still be displayed, but no user action may be taken. |
 | **Interface** | [Interface](/docs/reference/resources#interface) | The interface that this page is a part of. |
-| Directive | [String](/docs/reference/fieldtypes#string) | A high-level directive for the player, that will be displayed in large font at the top of the interface. |
+| Directive | [Text](/docs/reference/fieldtypes#text) | A high-level directive for the player, that will be displayed in large font at the top of the interface. |
 | Waypoint | [Waypoint](/docs/reference/resources#waypoint) | An optional location for the activity corresponding to this page. This is only visible on the operations page, not to players. |
 | Route | [Route](/docs/reference/resources#route) | An optional route corresponding to this page. This is only visible on the operations page, not to players. |
 | Panels | [[Panel](/docs/reference/panels)] | List of user interface panels. |
@@ -210,7 +210,7 @@ A variation in trip values, including timing, values, and waypoint options.
 | Field | Type | Description |
 | - | - | - |
 | Default | [Boolean](/docs/reference/fieldtypes#boolean) |  |
-| Section | [String](/docs/reference/fieldtypes#string) |  |
+| Section | [Text](/docs/reference/fieldtypes#text) |  |
 | Initial values | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) to [Simple value](/docs/reference/fieldtypes#simple-value) |  |
 | Customizations | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) to [Simple value](/docs/reference/fieldtypes#simple-value) |  |
 | Waypoint options | [Waypoint](/docs/reference/resources#waypoint) to [Name](/docs/reference/fieldtypes#name) |  |
@@ -226,7 +226,7 @@ A location used by the trip. Each waypoint can have multiple options that can be
 | - | - | - |
 | Options | List | A list of locations that this waypoint could refer to. |
 | **Options → Address** | [Address](/docs/reference/fieldtypes#address) | The address of the location. |
-| Options → Title | [String](/docs/reference/fieldtypes#string) |  |
+| Options → Title | [Text](/docs/reference/fieldtypes#text) |  |
 | Options → Values | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) to [Simple value](/docs/reference/fieldtypes#simple-value) |  |
 
 

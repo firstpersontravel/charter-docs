@@ -19,7 +19,7 @@ Displays a button.
 
 | Field | Type | Description |
 | - | - | - |
-| **Text** | [String](/docs/reference/fieldtypes#string) | Visible label on the button. |
+| **Text** | [Text](/docs/reference/fieldtypes#text) | Visible label on the button. |
 | Style | `solo` |  |
 
 
@@ -30,11 +30,11 @@ Displays a multiple choice option. When selected by a user, the curresponding va
 
 | Field | Type | Description |
 | - | - | - |
-| **Text** | [String](/docs/reference/fieldtypes#string) | Visible title for the choice. |
+| **Text** | [Text](/docs/reference/fieldtypes#text) | Visible title for the choice. |
 | **Value ref** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
 | **Choices** | List |  |
-| **Choices → Value** | [String](/docs/reference/fieldtypes#string) |  |
-| **Choices → Text** | [String](/docs/reference/fieldtypes#string) |  |
+| **Choices → Value** | [Text](/docs/reference/fieldtypes#text) |  |
+| **Choices → Text** | [Text](/docs/reference/fieldtypes#text) |  |
 
 
 ## Content browse
@@ -44,7 +44,7 @@ Displays an index page of content. The user can browse through all visible conte
 
 | Field | Type | Description |
 | - | - | - |
-| **Section** | [String](/docs/reference/fieldtypes#string) |  |
+| **Section** | [Text](/docs/reference/fieldtypes#text) |  |
 
 
 ## Directions
@@ -57,7 +57,7 @@ Displays live directions for the given route.
 | Route | [Route](/docs/reference/resources#route) |  |
 | Waypoint | [Waypoint](/docs/reference/resources#waypoint) |  |
 | Geofence | [Geofence](/docs/reference/resources#geofence) |  |
-| Destination name | [String](/docs/reference/fieldtypes#string) |  |
+| Destination name | [Text](/docs/reference/fieldtypes#text) |  |
 
 
 ## Image
@@ -95,8 +95,8 @@ Displays a numberpad.
 
 | Field | Type | Description |
 | - | - | - |
-| Submit | [String](/docs/reference/fieldtypes#string) |  |
-| Placeholder | [String](/docs/reference/fieldtypes#string) |  |
+| Submit | [Text](/docs/reference/fieldtypes#text) |  |
+| Placeholder | [Text](/docs/reference/fieldtypes#text) |  |
 
 
 ## Outlet
@@ -134,8 +134,8 @@ Displays a text entry field.
 
 | Field | Type | Description |
 | - | - | - |
-| Submit | [String](/docs/reference/fieldtypes#string) |  |
-| Placeholder | [String](/docs/reference/fieldtypes#string) |  |
+| Submit | [Text](/docs/reference/fieldtypes#text) |  |
+| Placeholder | [Text](/docs/reference/fieldtypes#text) |  |
 
 
 ## Video
@@ -152,7 +152,7 @@ Displays a yes/no choice. When updated, the corresponding value in the trip stat
 
 | Field | Type | Description |
 | - | - | - |
-| **Text** | [String](/docs/reference/fieldtypes#string) |  |
+| **Text** | [Text](/docs/reference/fieldtypes#text) |  |
 | **Value ref** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
 
 

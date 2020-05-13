@@ -32,6 +32,10 @@ module.exports = {
         to: 'blog',
         label: 'Updates',
         position: 'left'
+      }, {
+        href: 'https://charter.firstperson.travel',
+        label: 'Back to Charter',
+        position: 'right'
       }],
     },
     footer: {
@@ -48,6 +52,9 @@ module.exports = {
       }, {
         title: 'More Resources',
         items: [{
+          label: 'Use Charter',
+          href: 'http://charter.firstperson.travel/',
+        }, {
           label: 'About Charter',
           href: 'http://about.firstperson.travel/',
         }, {

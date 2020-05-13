@@ -22,7 +22,7 @@ Condition passes if the response to the clip being answered contains any part of
 
 | Field | Type | Description |
 | - | - | - |
-| **Response** | [String](/docs/reference/fieldtypes#string) |  |
+| **Response** | [Text](/docs/reference/fieldtypes#text) |  |
 
 
 ## Not
@@ -52,7 +52,7 @@ Condition passes if the submission contains any part of the 'part' parameter.
 
 | Field | Type | Description |
 | - | - | - |
-| **Part** | [String](/docs/reference/fieldtypes#string) |  |
+| **Part** | [Text](/docs/reference/fieldtypes#text) |  |
 
 
 ## Text contains
@@ -62,7 +62,7 @@ Condition passes if the content to the text contains any part of the 'part' para
 
 | Field | Type | Description |
 | - | - | - |
-| **Part** | [String](/docs/reference/fieldtypes#string) |  |
+| **Part** | [Text](/docs/reference/fieldtypes#text) |  |
 
 
 ## Text is affirmative

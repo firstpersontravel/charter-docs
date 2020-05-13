@@ -149,7 +149,7 @@ Occurs when a text has been received.
 | - | - | - |
 | From | [Role](/docs/reference/resources#role) | The sender of the message. |
 | To | [Role](/docs/reference/resources#role) | The recipient of the message. |
-| Contains | [String](/docs/reference/fieldtypes#string) | Optionally, a message that the message must contain. |
+| Contains | [Text](/docs/reference/fieldtypes#text) | Optionally, a message that the message must contain. |
 | Geofence | [Geofence](/docs/reference/resources#geofence) | Optionally, a geofence within which the message must have been sent. |
 
 
