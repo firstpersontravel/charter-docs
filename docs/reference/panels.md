@@ -47,6 +47,13 @@ Displays an index page of content. The user can browse through all visible conte
 | **Section** | [Text](/docs/reference/fieldtypes#text) |  |
 
 
+## Current page
+
+Shows the current page for this player. Should only be used as part of an interface.
+
+
+
+
 ## Directions
 
 Displays live directions for the given route.
@@ -99,13 +106,6 @@ Displays a numberpad.
 | Placeholder | [Text](/docs/reference/fieldtypes#text) |  |
 
 
-## Outlet
-
-For internal use.
-
-
-
-
 ## Qr display
 
 Displays a QR Code.
@@ -124,7 +124,7 @@ Displays simple text.
 | Field | Type | Description |
 | - | - | - |
 | **Text** | [Markdown](/docs/reference/fieldtypes#markdown) |  |
-| Style | `centered` or `quest` |  |
+| Style | `centered` or `banner` | Choose centered to center your text, or banner to give it a highlighted background. |
 
 
 ## Text entry

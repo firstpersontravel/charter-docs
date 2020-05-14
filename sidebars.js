@@ -1,10 +1,11 @@
 module.exports = {
-  someSidebar: {
-    Introduction: [
-      'welcome'
+  sidebar: {
+    Concepts: [
+      'concepts/overview',
+      'concepts/textdisplay'
     ],
     Tutorials: [
-      'tutorials'
+      'tutorials/tutorials'
     ],
     Reference: [
       'reference/resources',

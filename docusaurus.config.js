@@ -14,18 +14,18 @@ module.exports = {
         src: 'img/feather.png',
       },
       links: [{
-        to: 'docs/welcome',
-        activeBasePath: 'docs/welcome',
-        label: 'Welcome',
+        to: 'docs/concepts/overview',
+        activeBasePath: 'docs/concepts',
+        label: 'Concepts',
         position: 'left',
       }, {
-        to: 'docs/tutorials',
+        to: 'docs/tutorials/tutorials',
         activeBasePath: 'docs/tutorials',
         label: 'Tutorials',
         position: 'left',
       }, {
         to: 'docs/reference/resources',
-        activeBasePath: 'docs',
+        activeBasePath: 'docs/reference',
         label: 'Reference',
         position: 'left',
       }, {

@@ -24,7 +24,7 @@ function Home() {
                 'button button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/welcome')}>
+              to={useBaseUrl('docs/concepts/overview')}>
               Read the docs
             </Link>
           </div>

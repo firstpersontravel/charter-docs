@@ -55,7 +55,7 @@ A section of static text or media that can be displayed in a user interface.
 | **Interface** | [Interface](/docs/reference/resources#interface) | The parent interface in which this content page is displayed. |
 | **Section** | [Text](/docs/reference/fieldtypes#text) | A string indicating which a grouping for this content page. The the `content_browse` panel will show all visible content pages grouped by section. |
 | Active if | [Condition](/docs/reference/conditions) | An optional test to determine if the panel is visible or not. |
-| **Panels** | [[Panel](/docs/reference/panels)] | List of user interface panels. |
+| Panels | [[Panel](/docs/reference/panels)] | List of user interface panels. |
 
 
 ## Cue
