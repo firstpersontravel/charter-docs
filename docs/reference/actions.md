@@ -15,17 +15,6 @@ Add a player to a conference call.
 | **Role name** | [Role](/docs/reference/resources#role) | The role to add to the call. |
 
 
-## Adjust page
-
-Send an ephemeral signal to a player. This is deprecated.
-
-
-| Field | Type | Description |
-| - | - | - |
-| **Role name** | [Role](/docs/reference/resources#role) | The role to send the adjustment to. |
-| **New value** | [Text](/docs/reference/fieldtypes#text) | The adjustment value to send. |
-
-
 ## Conditional
 
 A conditional branch.
@@ -33,7 +22,7 @@ A conditional branch.
 
 | Field | Type | Description |
 | - | - | - |
-| **If** | [Condition](/docs/reference/conditions) |  |
+| If | [Condition](/docs/reference/conditions) |  |
 | Actions | [[Action](/docs/reference/actions)] |  |
 | Elseifs | List |  |
 | Elseifs → If | [Condition](/docs/reference/conditions) |  |
@@ -202,6 +191,17 @@ Stop audio and reset audio state.
 | Field | Type | Description |
 | - | - | - |
 | **Role name** | [Role](/docs/reference/resources#role) | The role to stop the audio for. |
+
+
+## Update interface
+
+Set the state of an interface. For tabbed interfaces, this sets the current tab.
+
+
+| Field | Type | Description |
+| - | - | - |
+| **Role name** | [Role](/docs/reference/resources#role) | The role to send the new interface state to. |
+| **New value** | [Text](/docs/reference/fieldtypes#text) | The new interface state. For tabbed interfaces, the name of the tab. |
 
 
 ## Wait

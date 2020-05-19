@@ -2,7 +2,7 @@ module.exports = {
   sidebar: {
     Concepts: [
       'concepts/overview',
-      'concepts/textdisplay'
+      'concepts/specialvalues'
     ],
     Tutorials: [
       'tutorials/tutorials'

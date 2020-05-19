@@ -5,31 +5,6 @@ sidebar_label: Resources
 ---
 
 Resources are the primary objects in your script.
-## Achievement
-
-A description of one aspect of the trip outcome. A use is to easily summarize player choices and progress from an overview screen. For instance, you can quickly see which branches they experienced, how many areas were unlocked, or other metrics.
-
-
-| Field | Type | Description |
-| - | - | - |
-| **Scene** | [Scene](/docs/reference/resources#scene) | The scene at which the outcome of this achievement is expected to be known. Before this scene, the achivement will be listed as 'pending'. |
-| **Style** | `completion` or `choice` | "Completion" achievements are active if the test resolves to true. "Choice" achievements can have multiple titles based on the evaluation of the test. |
-| Test | [Condition](/docs/reference/conditions) | The value to test for to determine if this achievement has been activated. |
-| **Titles** | [Text](/docs/reference/fieldtypes#text) to [Text](/docs/reference/fieldtypes#text) | Text values to display based on the result of the achievement test. |
-
-
-## Checkpoint
-
-A saved place marker for quickly resetting a trip while testing.
-
-
-| Field | Type | Description |
-| - | - | - |
-| **Scene** | [Scene](/docs/reference/resources#scene) | The scene that this checkpoint will restore the trip to. |
-| Pages | [Role](/docs/reference/resources#role) to [Page](/docs/reference/resources#page) | Pages to start each role at. |
-| Values | [Name](/docs/reference/fieldtypes#name) to [Simple value](/docs/reference/fieldtypes#simple-value) | Values to pre-set. |
-
-
 ## Clip
 
 A unit of text or audio that can be played as part of phone calls. A clip can expect an answer, which will fire a `clip_answered` event when it comes in.

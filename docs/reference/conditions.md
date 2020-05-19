@@ -12,7 +12,7 @@ Condition passes only if all the subconditions pass.
 
 | Field | Type | Description |
 | - | - | - |
-| Items | [[Condition](/docs/reference/conditions)] |  |
+| Items | [[Condition](/docs/reference/conditions)] | A list of subconditions, all of which must be true. |
 
 
 ## Clip answer is
@@ -22,7 +22,17 @@ Condition passes if the response to the clip being answered contains any part of
 
 | Field | Type | Description |
 | - | - | - |
-| **Response** | [Text](/docs/reference/fieldtypes#text) |  |
+| **Response** | [Text](/docs/reference/fieldtypes#text) | A simple string to check for within the clip response. |
+
+
+## Current role is
+
+Condition passes if the current player has a specific role.
+
+
+| Field | Type | Description |
+| - | - | - |
+| **Role name** | [Role](/docs/reference/resources#role) | The role to check against the current player. |
 
 
 ## Not
@@ -32,7 +42,7 @@ Condition passes if the subcondition does not pass.
 
 | Field | Type | Description |
 | - | - | - |
-| **Item** | [Condition](/docs/reference/conditions) |  |
+| **Item** | [Condition](/docs/reference/conditions) | A subcondition, which must be false. |
 
 
 ## Or
@@ -42,7 +52,7 @@ Condition passes if any of the subconditions pass.
 
 | Field | Type | Description |
 | - | - | - |
-| Items | [[Condition](/docs/reference/conditions)] |  |
+| Items | [[Condition](/docs/reference/conditions)] | A list of subconditions, one of which must be true. |
 
 
 ## Submission contains
@@ -52,7 +62,7 @@ Condition passes if the submission contains any part of the 'part' parameter.
 
 | Field | Type | Description |
 | - | - | - |
-| **Part** | [Text](/docs/reference/fieldtypes#text) |  |
+| **Part** | [Text](/docs/reference/fieldtypes#text) | A text fragment which must be contained by the submission. |
 
 
 ## Text contains
@@ -62,7 +72,7 @@ Condition passes if the content to the text contains any part of the 'part' para
 
 | Field | Type | Description |
 | - | - | - |
-| **Part** | [Text](/docs/reference/fieldtypes#text) |  |
+| **Part** | [Text](/docs/reference/fieldtypes#text) | A fragment of text to look for in the text response. |
 
 
 ## Text is affirmative
@@ -79,8 +89,8 @@ Condition passes if the value in 'string_ref' contains the part in 'part_ref'. I
 
 | Field | Type | Description |
 | - | - | - |
-| **String ref** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
-| **Part ref** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
+| **String ref** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up, which should contain text. In cases of a specific string, surround it with double quotes. |
+| **Part ref** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up which should contain the fragment to check for. In cases of a specific string, surround it with double quotes. |
 
 
 ## Value equals
@@ -90,8 +100,8 @@ Condition passes if the value in 'ref1' matches the value in 'ref2'. If 'ref1' o
 
 | Field | Type | Description |
 | - | - | - |
-| **Ref1** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
-| **Ref2** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
+| **Ref1** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up and compare against the second. |
+| **Ref2** | [Lookup](/docs/reference/fieldtypes#lookup) | Another value to look up and compare against the first. In cases of a specific string, surround it with double quotes. |
 
 
 ## Value is true
@@ -101,6 +111,6 @@ Condition passes if the value has any entry that is not false.
 
 | Field | Type | Description |
 | - | - | - |
-| **Ref** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
+| **Ref** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up and see if it contains any non-false value. |
 
 

@@ -7,7 +7,7 @@ sidebar_label: Events
 Events occur over the course of your trip operation. When a trigger is associated with an event, that trigger will activate whenever a matching event occurs.
 ## Audio received
 
-Occurs when am audio message has been received.
+Occurs when an audio message has been received.
 
 
 | Field | Type | Description |
@@ -103,7 +103,7 @@ Occurs when a player enters a geofenced region.
 
 ## Image received
 
-Occurs when am image message has been received.
+Occurs when an image message has been received.
 
 
 | Field | Type | Description |
