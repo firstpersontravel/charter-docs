@@ -56,13 +56,13 @@ A circular region around a waypoint. It can be used to trigger events when playe
 
 ## Inbox
 
-An email inbox that you have access to. (This requires some custom setup.)
+An email account that you have access to. (This requires some custom setup.)
 
 
 | Field | Type | Description |
 | - | - | - |
-| **Role** | [Role](/docs/reference/resources#role) | Role this inbox belongs to. |
-| **Address** | [Email](/docs/reference/fieldtypes#email) | Email address to send from. Currently must be from @firstperson.travel. |
+| **Role** | [Role](/docs/reference/resources#role) | Role this account belongs to. |
+| **Address** | `charter@firstperson.travel` | Email address to send from. Currently must be charter@firstperson.travel. |
 
 
 ## Interface

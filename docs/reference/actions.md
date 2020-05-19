@@ -114,8 +114,6 @@ Send an email from one player to another.
 | **To** | [Role](/docs/reference/resources#role) | Role to send to. |
 | **Subject** | [Text](/docs/reference/fieldtypes#text) | Subject line for the email. |
 | **Body** | [Markdown](/docs/reference/fieldtypes#markdown) | Body of the email. |
-| Cc | [Email](/docs/reference/fieldtypes#email) | Email address to CC. |
-| Bcc | [Email](/docs/reference/fieldtypes#email) | Email address to BCC. |
 
 
 ## Send image
