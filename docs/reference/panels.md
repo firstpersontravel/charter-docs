@@ -84,8 +84,8 @@ Displays a browsable interface of all messages between a set of players.
 
 | Field | Type | Description |
 | - | - | - |
-| **As** | [Role](/docs/reference/resources#role) |  |
-| **With** | [Role](/docs/reference/resources#role) |  |
+| **With** | [Role](/docs/reference/resources#role) | Which role to view messages with. |
+| As | [Role](/docs/reference/resources#role) | Which role to view messages as. Defaults to current player. |
 
 
 ## Messages browse
@@ -93,6 +93,9 @@ Displays a browsable interface of all messages between a set of players.
 Displays a browsable interface of all messages for a player.
 
 
+| Field | Type | Description |
+| - | - | - |
+| As | [Role](/docs/reference/resources#role) | Which role to view messages as. Defaults to current player. |
 
 
 ## Numberpad

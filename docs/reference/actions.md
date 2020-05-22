@@ -37,7 +37,7 @@ Increment the numerical value of a value by reference.
 
 | Field | Type | Description |
 | - | - | - |
-| **Value ref** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
+| **Name** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
 | Delta | [Number](/docs/reference/fieldtypes#number) |  |
 
 
@@ -157,8 +157,8 @@ Update a value in the trip state to either a constant number or string, or to ma
 
 | Field | Type | Description |
 | - | - | - |
-| **Value ref** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
-| **New value ref** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
+| **Name** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
+| **To** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
 
 
 ## Signal cue

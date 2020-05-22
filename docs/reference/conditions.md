@@ -89,8 +89,8 @@ Condition passes if the value in 'string_ref' contains the part in 'part_ref'. I
 
 | Field | Type | Description |
 | - | - | - |
-| **String ref** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up, which should contain text. In cases of a specific string, surround it with double quotes. |
-| **Part ref** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up which should contain the fragment to check for. In cases of a specific string, surround it with double quotes. |
+| **Search** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up, which should contain text. In cases of a specific string, surround it with double quotes. |
+| **For** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up which should contain the fragment to check for. In cases of a specific string, surround it with double quotes. |
 
 
 ## Value equals
@@ -100,8 +100,8 @@ Condition passes if the value in 'ref1' matches the value in 'ref2'. If 'ref1' o
 
 | Field | Type | Description |
 | - | - | - |
-| **Ref1** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up and compare against the second. |
-| **Ref2** | [Lookup](/docs/reference/fieldtypes#lookup) | Another value to look up and compare against the first. In cases of a specific string, surround it with double quotes. |
+| **Value 1** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up and compare against the second. |
+| **Value 2** | [Lookup](/docs/reference/fieldtypes#lookup) | Another value to look up and compare against the first. In cases of a specific string, surround it with double quotes. |
 
 
 ## Value is true
@@ -111,6 +111,6 @@ Condition passes if the value has any entry that is not false.
 
 | Field | Type | Description |
 | - | - | - |
-| **Ref** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up and see if it contains any non-false value. |
+| **Value** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up and see if it contains any non-false value. |
 
 

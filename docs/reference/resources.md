@@ -124,12 +124,9 @@ A participant in the experience. This participant can be a player, an actor, or 
 
 | Field | Type | Description |
 | - | - | - |
-| **Type** | `traveler`, `performer` or `scripted` | Type of role. "Traveler" refers to the audience, "performer" can be used for actors or internal staff, and "scripted" is for automated roles that are not assigned users. |
-| Max players | [Integer](/docs/reference/fieldtypes#integer) | The maximum number of players who may be a part of this trip as this role. This can be used to support groups of more than one player and device, all sharing the same trip state. |
-| Active if | [Condition](/docs/reference/conditions) | If this is specified, the role will not be allowed to be assigned a user if this condition does not pass. |
-| Starting page | [Page](/docs/reference/resources#page) | The page that this role will start the trip open. |
-| Required values | [[Simple attribute](/docs/reference/fieldtypes#simple-attribute)] | (Advanced) Indicates a list of special values that can be supplied for each user account that may play this role. This could be used to specify a custom image for each actor, or custom text associated with a certain role. |
 | Interface | [Interface](/docs/reference/resources#interface) |  |
+| Max players | [Integer](/docs/reference/fieldtypes#integer) | The maximum number of players who may be a part of this trip as this role. This can be used to support groups of more than one player and device, all sharing the same trip state. |
+| Role values | [[Simple attribute](/docs/reference/fieldtypes#simple-attribute)] | (Advanced) Indicates a list of special values that can be supplied for each user account that may play this role. This could be used to specify a custom image for each actor, or custom text associated with a certain role. |
 
 
 ## Route
@@ -152,8 +149,7 @@ A temporal unit of experience. Usually only one scene is active at a time.
 
 | Field | Type | Description |
 | - | - | - |
-| Global | [Boolean](/docs/reference/fieldtypes#boolean) | Enable if this scene is always active. |
-| Active if | [Condition](/docs/reference/conditions) | Global scenes can be activated or deactived by a conditional. |
+| Always active | [Boolean](/docs/reference/fieldtypes#boolean) | Enable if this scene is always active. Otherwise, the triggers in this scene will only fire if it is the current scene of the trip. |
 
 
 ## Time
