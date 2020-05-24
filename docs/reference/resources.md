@@ -168,8 +168,6 @@ A fires when a defined event occurs. Once fired, it will apply a set of actions,
 | - | - | - |
 | **Scene** | [Scene](/docs/reference/resources#scene) |  |
 | Event | [Event](/docs/reference/events) |  |
-| Repeatable | [Boolean](/docs/reference/fieldtypes#boolean) |  |
-| Active if | [Condition](/docs/reference/conditions) |  |
 | Actions | [[Action](/docs/reference/actions)] |  |
 
 

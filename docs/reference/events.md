@@ -14,7 +14,6 @@ Occurs when an audio message has been received.
 | - | - | - |
 | From | [Role](/docs/reference/resources#role) | The sender of the message. |
 | To | [Role](/docs/reference/resources#role) | The recipient of the message. |
-| Geofence | [Geofence](/docs/reference/resources#geofence) | Optionally, a geofence within which the message must have been sent. |
 
 
 ## Button pressed
@@ -110,7 +109,6 @@ Occurs when an image message has been received.
 | - | - | - |
 | From | [Role](/docs/reference/resources#role) | The sender of the message. |
 | To | [Role](/docs/reference/resources#role) | The recipient of the message. |
-| Geofence | [Geofence](/docs/reference/resources#geofence) | Optionally, a geofence within which the message must have been sent. |
 
 
 ## Numberpad submitted
@@ -149,8 +147,6 @@ Occurs when a text has been received.
 | - | - | - |
 | From | [Role](/docs/reference/resources#role) | The sender of the message. |
 | To | [Role](/docs/reference/resources#role) | The recipient of the message. |
-| Contains | [Text](/docs/reference/fieldtypes#text) | Optionally, a message that the message must contain. |
-| Geofence | [Geofence](/docs/reference/resources#geofence) | Optionally, a geofence within which the message must have been sent. |
 
 
 ## Time occurred

@@ -55,6 +55,28 @@ Condition passes if any of the subconditions pass.
 | Items | [[Condition](/docs/reference/conditions)] | A list of subconditions, one of which must be true. |
 
 
+## Role in geofence
+
+Condition passes if a role is within a geofence.
+
+
+| Field | Type | Description |
+| - | - | - |
+| **Role** | [Role](/docs/reference/resources#role) | The role to check. |
+| **Geofence** | [Geofence](/docs/reference/resources#geofence) | The geofence that a player with this role must be within. |
+
+
+## Role page is
+
+Condition passes if a role is on a specific page.
+
+
+| Field | Type | Description |
+| - | - | - |
+| **Role name** | [Role](/docs/reference/resources#role) | The role to check. |
+| **Page name** | [Page](/docs/reference/resources#page) | The page that this role must be on. |
+
+
 ## Submission contains
 
 Condition passes if the submission contains any part of the 'part' parameter.
