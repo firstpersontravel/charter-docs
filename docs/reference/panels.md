@@ -5,16 +5,36 @@ sidebar_label: Panels
 ---
 
 A panel is the core component for user experience in Charter. Each page is comprised of as many panels as you like.
-## Audio foreground
+## Audio
 
-Displays an audio message that can be played at will.
+An audio clip that can be played at will.
 
 
+
+
+## Browse messages
+
+A browsable interface of all messages for a role.
+
+
+| Field | Type | Description |
+| - | - | - |
+| As | [Role](/docs/reference/resources#role) | Which role to view messages as. Defaults to current player. |
+
+
+## Browse subpages
+
+An index page of subpages. The user can browse through all visible subpages matching a given section.
+
+
+| Field | Type | Description |
+| - | - | - |
+| **Section** | [Text](/docs/reference/fieldtypes#text) |  |
 
 
 ## Button
 
-Displays a button.
+A button.
 
 
 | Field | Type | Description |
@@ -25,7 +45,7 @@ Displays a button.
 
 ## Choice
 
-Displays a multiple choice option. When selected by a user, the curresponding value in the trip state will be updated.
+A multiple choice option. When selected by a user, the curresponding variable in the trip state will be updated.
 
 
 | Field | Type | Description |
@@ -37,19 +57,9 @@ Displays a multiple choice option. When selected by a user, the curresponding va
 | **Choices → Text** | [Text](/docs/reference/fieldtypes#text) |  |
 
 
-## Content browse
-
-Displays an index page of content. The user can browse through all visible content pages matching the given section.
-
-
-| Field | Type | Description |
-| - | - | - |
-| **Section** | [Text](/docs/reference/fieldtypes#text) |  |
-
-
 ## Current page
 
-Shows the current page for this player. Should only be used as part of an interface.
+The current page for this player. Should only be used as part of an interface.
 
 
 
@@ -69,7 +79,7 @@ Displays live directions for the given route.
 
 ## Image
 
-Displays an image.
+An image.
 
 
 | Field | Type | Description |
@@ -77,9 +87,9 @@ Displays an image.
 | Style | `float-right` |  |
 
 
-## Messages
+## Message thread
 
-Displays a browsable interface of all messages between a set of players.
+All messages between two roles.
 
 
 | Field | Type | Description |
@@ -88,40 +98,20 @@ Displays a browsable interface of all messages between a set of players.
 | As | [Role](/docs/reference/resources#role) | Which role to view messages as. Defaults to current player. |
 
 
-## Messages browse
+## Number entry
 
-Displays a browsable interface of all messages for a player.
-
-
-| Field | Type | Description |
-| - | - | - |
-| As | [Role](/docs/reference/resources#role) | Which role to view messages as. Defaults to current player. |
-
-
-## Numberpad
-
-Displays a numberpad.
+A number input.
 
 
 | Field | Type | Description |
 | - | - | - |
-| Submit | [Text](/docs/reference/fieldtypes#text) |  |
-| Placeholder | [Text](/docs/reference/fieldtypes#text) |  |
-
-
-## Qr display
-
-Displays a QR Code.
-
-
-| Field | Type | Description |
-| - | - | - |
-| **Qr code** | [Qr code](/docs/reference/resources#qr-code) |  |
+| Submit button label | [Text](/docs/reference/fieldtypes#text) |  |
+| Placeholder text | [Text](/docs/reference/fieldtypes#text) |  |
 
 
 ## Text
 
-Displays simple text.
+A simple text.
 
 
 | Field | Type | Description |
@@ -132,30 +122,30 @@ Displays simple text.
 
 ## Text entry
 
-Displays a text entry field.
+A text entry field.
 
 
 | Field | Type | Description |
 | - | - | - |
-| Submit | [Text](/docs/reference/fieldtypes#text) |  |
-| Placeholder | [Text](/docs/reference/fieldtypes#text) |  |
+| Submit button label | [Text](/docs/reference/fieldtypes#text) |  |
+| Placeholder text | [Text](/docs/reference/fieldtypes#text) |  |
 
 
 ## Video
 
-Displays a video.
+A video.
 
 
 
 
 ## Yesno
 
-Displays a yes/no choice. When updated, the corresponding value in the trip state will be updated.
+A yes/no choice. When updated, the corresponding variable in the trip state will be updated.
 
 
 | Field | Type | Description |
 | - | - | - |
 | **Text** | [Text](/docs/reference/fieldtypes#text) |  |
-| **Value ref** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
+| **Save to variable name** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
 
 

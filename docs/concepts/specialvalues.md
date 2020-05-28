@@ -11,8 +11,9 @@ In all places where text is shown to a participant, certain special values can b
 ## Trip special values
 
 * `{{date}}`: Trip date
-
-Any value or customization can be accessed by referencing the name of that value in double curly braces. For instance, if a "Set Value" action sets the "greeting" value to "hello there", and the "name" value to "David", then a text field set to "{{greeting}}, {{name}}" will appear to the participant as "hello there, David".
+* `{{schedule.<time_name>}}`: The clock time corresponding to a [Time](/docs/reference/resources#time) in your script, in the timezone of your Experience. For instance, if you have a Time with the title "Player's Arrival", and that time is scheduled for 3:00pm in a Variant, then "{{schedule.players_arrival}}" will appear as "3:00pm" in the player's interface.
+* `{{<customization_name>}}`: The value of a customization set in `Customization Defaults` of a [Variant](/docs/reference/resources#variant).
+* `{{<variable_name>}}`: The value of a variable set by the `Set Variable` action, or set in `Variable Defaults` of a [Variant](/docs/reference/resources#variant).
 
 ## Player special values
 
@@ -20,12 +21,12 @@ You can include some special values for the current player.
 
 * `{{player.link}}`: A URL that the player can go to to see their current page.
 * `{{player.email}}`: The email of the current player.
-* `{{player.directive}}`: The directive of the player's current page.
+* `{{player.headline}}`: The headline of the player's current page.
 * `{{player.phone_number}}`: The player's phone number.
 
 ## Event special values
 
 When actions are triggered by events, you can access some special values unique to those events.
 
-* `{{event.content.message}}`: The content of a text message, available on the `text_received` event.
+* `{{event.content}}`: The content of a text message, available on the `text_received` event.
 * `{{event.submission}}`: The content of a numberpad or text entry submission, available oon the `numberpad_submitted` or `text_entry_submitted` event.

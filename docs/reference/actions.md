@@ -141,7 +141,7 @@ Send a text message from one player to another.
 
 ## Send to page
 
-Set a player to a page by role.
+Set a role to a page.
 
 
 | Field | Type | Description |
@@ -150,9 +150,9 @@ Set a player to a page by role.
 | **Page name** | [Page](/docs/reference/resources#page) | The page to send the matching players to. |
 
 
-## Set value
+## Set variable
 
-Update a value in the trip state to either a constant number or string, or to match another value by reference.
+Update a variable in the trip state to either a constant number or string, or to match another variable by reference.
 
 
 | Field | Type | Description |
@@ -212,9 +212,9 @@ Wait a fixed period of time.
 | **Duration** | [Time offset](/docs/reference/fieldtypes#time-offset) | A duration, i.e. 1h, 30s, 4.2m |
 
 
-## Wait before time
+## Wait before moment
 
-Wait a fixed period of time before a scheduled time.
+Wait a fixed period of time before a scheduled moment.
 
 
 | Field | Type | Description |
@@ -223,9 +223,9 @@ Wait a fixed period of time before a scheduled time.
 | **Before** | [Time offset](/docs/reference/fieldtypes#time-offset) | A time offset, i.e. 1h, 30s, 4.2m |
 
 
-## Wait for time
+## Wait until moment
 
-Wait a fixed period of time.
+Wait for a moment to arrive.
 
 
 | Field | Type | Description |
