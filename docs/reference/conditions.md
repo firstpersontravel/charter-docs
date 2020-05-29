@@ -5,9 +5,9 @@ sidebar_label: Conditions
 ---
 
 A condition is how you create logic and branching in your experience.
-## And
+## All
 
-Condition passes only if all the subconditions pass.
+A condition that passes only if all of its subconditions pass.
 
 
 | Field | Type | Description |
@@ -16,9 +16,20 @@ Condition passes only if all the subconditions pass.
 
 
 
+## Any
+
+A condition that passes if any one of its subconditions pass.
+
+
+| Field | Type | Description |
+| - | - | - |
+| Items | [[Condition](/docs/reference/conditions)] | A list of subconditions, one of which must be true. |
+
+
+
 ## Clip answer is
 
-Condition passes if the response to the clip being answered contains any part of the 'response' parameter.
+A condition that passes if the response to the clip being answered contains any part of the 'response' parameter.
 
 
 | Field | Type | Description |
@@ -29,18 +40,18 @@ Condition passes if the response to the clip being answered contains any part of
 
 ## Current role is
 
-Condition passes if the current player has a specific role.
+A condition that passes if the current player has a specific role.
 
 
 | Field | Type | Description |
 | - | - | - |
-| **Role name** | [Role](/docs/reference/resources#role) | The role to check against the current player. |
+| **Role** | [Role](/docs/reference/resources#role) | The role to check against the current player. |
 
 
 
 ## Not
 
-Condition passes if the subcondition does not pass.
+A condition that passes if the subcondition does not pass.
 
 
 | Field | Type | Description |
@@ -49,20 +60,9 @@ Condition passes if the subcondition does not pass.
 
 
 
-## Or
-
-Condition passes if any of the subconditions pass.
-
-
-| Field | Type | Description |
-| - | - | - |
-| Items | [[Condition](/docs/reference/conditions)] | A list of subconditions, one of which must be true. |
-
-
-
 ## Role in geofence
 
-Condition passes if a role is within a geofence.
+A condition that passes if a role is within a geofence.
 
 
 | Field | Type | Description |
@@ -74,19 +74,19 @@ Condition passes if a role is within a geofence.
 
 ## Role page is
 
-Condition passes if a role is on a specific page.
+A condition that passes if a role is on a specific page.
 
 
 | Field | Type | Description |
 | - | - | - |
-| **Role name** | [Role](/docs/reference/resources#role) | The role to check. |
-| **Page name** | [Page](/docs/reference/resources#page) | The page that this role must be on. |
+| **Role** | [Role](/docs/reference/resources#role) | The role to check. |
+| **Page** | [Page](/docs/reference/resources#page) | The page that this role must be on. |
 
 
 
 ## Submission contains
 
-Condition passes if the submission contains any part of the 'part' parameter.
+A condition that passes if the submission contains any part of the 'part' parameter.
 
 
 | Field | Type | Description |
@@ -97,7 +97,7 @@ Condition passes if the submission contains any part of the 'part' parameter.
 
 ## Text contains
 
-Condition passes if the content to the text contains any part of the 'part' parameter.
+A condition that passes if the content to the text contains any part of the 'part' parameter.
 
 
 | Field | Type | Description |
@@ -108,44 +108,44 @@ Condition passes if the content to the text contains any part of the 'part' para
 
 ## Text is affirmative
 
-Condition passes if the content to the text seems affirmitive (contains 'yes', 'ok', 'sure', etc.
+A condition that passes if the content to the text seems affirmitive (contains 'yes', 'ok', 'sure', etc.
 
 
 
 
 
-## Value contains
+## Variable contains
 
-Condition passes if the value in 'string_ref' contains the part in 'part_ref'. If 'string_ref' or 'part_ref' are surrounded by double quotes, or are a number, or "true" or "false", then the value in the other reference will be matched to that simple value rather performing two lookups.
-
-
-| Field | Type | Description |
-| - | - | - |
-| **Search** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up, which should contain text. In cases of a specific string, surround it with double quotes. |
-| **For** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up which should contain the fragment to check for. In cases of a specific string, surround it with double quotes. |
-
-
-
-## Value equals
-
-Condition passes if the value in 'ref1' matches the value in 'ref2'. If 'ref1' or 'ref2' are surrounded by double quotes, or are a number, or "true" or "false", then the value in the other reference will be matched to that simple value rather performing two lookups.
+A condition that passes if the search variable value contains the part in the part variable. If 'string_ref' or 'part_ref' are surrounded by double quotes, or are a number, or "true" or "false", then the value in the other reference will be matched to that simple variable rather performing two lookups.
 
 
 | Field | Type | Description |
 | - | - | - |
-| **Value 1** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up and compare against the second. |
-| **Value 2** | [Lookup](/docs/reference/fieldtypes#lookup) | Another value to look up and compare against the first. In cases of a specific string, surround it with double quotes. |
+| **Search variable name** | [Lookup](/docs/reference/fieldtypes#lookup) | A variable to look up, which should contain text. In cases of a specific string, surround it with double quotes. |
+| **Part variable name** | [Lookup](/docs/reference/fieldtypes#lookup) | A variable to look up which should contain the fragment to check for. In cases of a specific string, surround it with double quotes. |
 
 
 
-## Value is true
+## Variable is present
 
-Condition passes if the value has any entry that is not false.
+A condition that passes if the variable has any value that is not false.
 
 
 | Field | Type | Description |
 | - | - | - |
-| **Value** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up and see if it contains any non-false value. |
+| **Variable name** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up and see if it contains any non-false value. |
+
+
+
+## Variables are equal
+
+A condition that passes if the first value matches the second value. If "Value 1" or "Value 2" are surrounded by double quotes, or are a number, or "true" or "false", then the value in the other reference will be matched to that simple value rather performing two lookups.
+
+
+| Field | Type | Description |
+| - | - | - |
+| **Variable name 1** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up and compare against the second. |
+| **Variable name 2** | [Lookup](/docs/reference/fieldtypes#lookup) | Another value to look up and compare against the first. In cases of a specific string, surround it with double quotes. |
 
 
 

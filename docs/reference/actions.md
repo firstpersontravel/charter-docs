@@ -12,7 +12,7 @@ Add a player to a conference call.
 
 | Field | Type | Description |
 | - | - | - |
-| **Role name** | [Role](/docs/reference/resources#role) | The role to add to the call. |
+| **Role** | [Role](/docs/reference/resources#role) | The role to add to the call. |
 
 
 
@@ -39,7 +39,7 @@ Increment the numerical value of a value by reference.
 
 | Field | Type | Description |
 | - | - | - |
-| **Name** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
+| **Name** | [Variable name](/docs/reference/fieldtypes#variable-name) |  |
 | Delta | [Number](/docs/reference/fieldtypes#number) |  |
 
 
@@ -51,8 +51,8 @@ Initiate a call from one player to another.
 
 | Field | Type | Description |
 | - | - | - |
-| **To role name** | [Role](/docs/reference/resources#role) | The player to initiate a call to. |
-| **As role name** | [Role](/docs/reference/resources#role) | The player from whom the call originates. |
+| **To** | [Role](/docs/reference/resources#role) | The player to initiate a call to. |
+| **As** | [Role](/docs/reference/resources#role) | The player from whom the call originates. |
 
 
 
@@ -63,7 +63,7 @@ Pause currently playing audio.
 
 | Field | Type | Description |
 | - | - | - |
-| **Role name** | [Role](/docs/reference/resources#role) | The role to pause the audio for. |
+| **Role** | [Role](/docs/reference/resources#role) | The role to pause the audio for. |
 
 
 
@@ -74,7 +74,7 @@ Start playing audio for a certain role.
 
 | Field | Type | Description |
 | - | - | - |
-| **Role name** | [Role](/docs/reference/resources#role) | The role to play the audio for. |
+| **Role** | [Role](/docs/reference/resources#role) | The role to play the audio for. |
 
 
 
@@ -85,7 +85,7 @@ Play a clip on an active phone call.
 
 | Field | Type | Description |
 | - | - | - |
-| **Clip name** | [Call clip](/docs/reference/resources#clip) | The clip to play. |
+| **Clip** | [Call clip](/docs/reference/resources#clip) | The clip to play. |
 
 
 
@@ -96,7 +96,7 @@ Resume currently paused audio.
 
 | Field | Type | Description |
 | - | - | - |
-| **Role name** | [Role](/docs/reference/resources#role) | The role to resume the audio for. |
+| **Role** | [Role](/docs/reference/resources#role) | The role to resume the audio for. |
 
 
 
@@ -107,8 +107,8 @@ Send an audio message from one player to another.
 
 | Field | Type | Description |
 | - | - | - |
-| **From role name** | [Role](/docs/reference/resources#role) | The role to send the message from. |
-| **To role name** | [Role](/docs/reference/resources#role) | The role to send the message to. |
+| **From** | [Role](/docs/reference/resources#role) | The role to send the message from. |
+| **To** | [Role](/docs/reference/resources#role) | The role to send the message to. |
 
 
 
@@ -133,8 +133,8 @@ Send an image from one player to another.
 
 | Field | Type | Description |
 | - | - | - |
-| **From role name** | [Role](/docs/reference/resources#role) | The role to send the message from. |
-| **To role name** | [Role](/docs/reference/resources#role) | The role to send the message to. |
+| **From** | [Role](/docs/reference/resources#role) | The role to send the message from. |
+| **To** | [Role](/docs/reference/resources#role) | The role to send the message to. |
 
 
 
@@ -145,8 +145,8 @@ Send a text message from one player to another.
 
 | Field | Type | Description |
 | - | - | - |
-| **From role name** | [Role](/docs/reference/resources#role) | The role to send the message from. |
-| **To role name** | [Role](/docs/reference/resources#role) | The role to send the message to. |
+| **From** | [Role](/docs/reference/resources#role) | The role to send the message from. |
+| **To** | [Role](/docs/reference/resources#role) | The role to send the message to. |
 | **Content** | [Text](/docs/reference/fieldtypes#text) | The content of the message to send. |
 
 
@@ -158,8 +158,8 @@ Set a role to a page.
 
 | Field | Type | Description |
 | - | - | - |
-| **Role name** | [Role](/docs/reference/resources#role) | The role to send to a page. |
-| **Page name** | [Page](/docs/reference/resources#page) | The page to send the matching players to. |
+| **Role** | [Role](/docs/reference/resources#role) | The role to send to a page. |
+| **Page** | [Page](/docs/reference/resources#page) | The page to send the matching players to. |
 
 
 
@@ -170,7 +170,7 @@ Update a variable in the trip state to either a constant number or string, or to
 
 | Field | Type | Description |
 | - | - | - |
-| **Name** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
+| **Name** | [Variable name](/docs/reference/fieldtypes#variable-name) |  |
 | **To** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
 
 
@@ -182,7 +182,7 @@ Signal a cue. A cue does nothing on its own, but usually will have triggers atta
 
 | Field | Type | Description |
 | - | - | - |
-| **Cue name** | [Cue](/docs/reference/resources#cue) | The cue to signal. |
+| **Cue** | [Cue](/docs/reference/resources#cue) | The cue to signal. |
 
 
 
@@ -193,7 +193,7 @@ Start a new scene.
 
 | Field | Type | Description |
 | - | - | - |
-| **Scene name** | [Scene](/docs/reference/resources#scene) |  |
+| **Scene** | [Scene](/docs/reference/resources#scene) |  |
 
 
 
@@ -204,7 +204,7 @@ Stop audio and reset audio state.
 
 | Field | Type | Description |
 | - | - | - |
-| **Role name** | [Role](/docs/reference/resources#role) | The role to stop the audio for. |
+| **Role** | [Role](/docs/reference/resources#role) | The role to stop the audio for. |
 
 
 
@@ -215,7 +215,7 @@ Set the state of an interface. For tabbed interfaces, this sets the current tab.
 
 | Field | Type | Description |
 | - | - | - |
-| **Role name** | [Role](/docs/reference/resources#role) | The role to send the new interface state to. |
+| **Role** | [Role](/docs/reference/resources#role) | The role to send the new interface state to. |
 | **New value** | [Text](/docs/reference/fieldtypes#text) | The new interface state. For tabbed interfaces, the name of the tab. |
 
 
@@ -227,7 +227,7 @@ Wait a fixed period of time.
 
 | Field | Type | Description |
 | - | - | - |
-| **Duration** | [Time offset](/docs/reference/fieldtypes#time-offset) | A duration, i.e. 1h, 30s, 4.2m |
+| **Duration** | [Duration](/docs/reference/fieldtypes#duration) | A duration, i.e. 1h, 30s, 4.2m |
 
 
 
@@ -239,7 +239,7 @@ Wait a fixed period of time before a scheduled moment.
 | Field | Type | Description |
 | - | - | - |
 | **Until** | [Moment](/docs/reference/resources#time) |  |
-| **Before** | [Time offset](/docs/reference/fieldtypes#time-offset) | A time offset, i.e. 1h, 30s, 4.2m |
+| **Before** | [Duration](/docs/reference/fieldtypes#duration) | A time offset, i.e. 1h, 30s, 4.2m |
 
 
 

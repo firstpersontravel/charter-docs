@@ -129,7 +129,7 @@ Occurs when the current clock time reaches a scheduled moment.
 | Field | Type | Description |
 | - | - | - |
 | **Moment** | [Moment](/docs/reference/resources#time) |  |
-| Offset | [Time offset](/docs/reference/fieldtypes#time-offset) | A time offset, e.g. 1h, 30s, 4.2m, -10s, -1.5h |
+| Offset | [Duration](/docs/reference/fieldtypes#duration) | A time offset, e.g. 1h, 30s, 4.2m, -10s, -1.5h |
 
 
 

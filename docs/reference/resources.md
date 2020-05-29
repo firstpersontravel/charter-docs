@@ -131,8 +131,8 @@ A phone number by which one player can contact another via text or phone calls.
 | Field | Type | Description |
 | - | - | - |
 | **For** | [Role](/docs/reference/resources#role) | The role who will be sending or receiving messages through this phone line. |
-| **As** | [Role](/docs/reference/resources#role) | The role whose messages are received and sent. This will usually be the same as the "for" role, except when you want the "for" role to be impersonating somebody else. In that case, the "as" role is the role being impersonated. |
-| **With** | [Role](/docs/reference/resources#role) | The role that is being messaged with. |
+| **Counterpart** | [Role](/docs/reference/resources#role) | The role that is being messaged with. |
+| Impersonating | [Role](/docs/reference/resources#role) | In cases where you want a participant to impersonate a different role, this is the role that is being impersonated. Otherwise this can be left blank. |
 | Entryway | [Boolean](/docs/reference/fieldtypes#boolean) | If this value is true, the phone line will be assigned a universal number. New players can text this number to start a new trip. |
 
 
@@ -148,8 +148,8 @@ A place used by the trip. Each place can have multiple locations that can be set
 | - | - | - |
 | Locations | List | A list of locations that this place could refer to. |
 | **Locations → Address** | [Address](/docs/reference/fieldtypes#address) | The address of the location. |
-| Locations → Title | [Text](/docs/reference/fieldtypes#text) |  |
-| Locations → Variable defaults | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) to [Simple value](/docs/reference/fieldtypes#simple-value) |  |
+| Locations → Title | [Text](/docs/reference/fieldtypes#text) | The title of this location for internal display. |
+| Locations → Variable defaults | [Variable name](/docs/reference/fieldtypes#variable-name) to [Value](/docs/reference/fieldtypes#value) | These values are accessible to a run when this location is selected. For instance, if there are directions associated with the various locations for a place, you could set those here. |
 
 
 
@@ -164,7 +164,7 @@ A participant in the experience. This participant can be a player, an actor, or 
 | - | - | - |
 | Interface | [Interface](/docs/reference/resources#interface) |  |
 | Max users | [Integer](/docs/reference/fieldtypes#integer) | The maximum number of users who may be a part of this trip as this role. This can be used to support groups of more than one player and device, all sharing the same trip state. |
-| Role variable names | [[Simple attribute](/docs/reference/fieldtypes#simple-attribute)] | (Advanced) Indicates a list of special variables that can be supplied for each user account that may play this role. This could be used to specify a custom image for each actor, or custom text associated with a certain role. |
+| Role variable names | [[Variable name](/docs/reference/fieldtypes#variable-name)] | (Advanced) Indicates a list of special variables that can be supplied for each user account that may play this role. This could be used to specify a custom image for each actor, or custom text associated with a certain role. |
 
 * The `Role` field of the [Play background audio](/docs/reference/actions#play_audio) action is a Role.
 * The `Role` field of the [Pause background audio](/docs/reference/actions#pause_audio) action is a Role.
@@ -241,10 +241,9 @@ A variation in trip values, including timing, values, and waypoint options.
 | - | - | - |
 | Default | [Boolean](/docs/reference/fieldtypes#boolean) | If default is set to true, all new trips will have these defaults set. |
 | Variant group | [Text](/docs/reference/fieldtypes#text) | You can group variants if you want to allow only one of a set to be selected. For instance, if you have a basic and deluxe variant, give both variants a group name of "package", and only one can be selected at a time. |
-| Variable defaults | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) to [Simple value](/docs/reference/fieldtypes#simple-value) |  |
-| Customization defaults | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) to [Simple value](/docs/reference/fieldtypes#simple-value) |  |
-| Location defaults | [Place](/docs/reference/resources#waypoint) to [Name](/docs/reference/fieldtypes#name) |  |
-| Moment schedule | [Moment](/docs/reference/resources#time) to [Time shorthand](/docs/reference/fieldtypes#time-shorthand) |  |
+| Variable defaults | [Variable name](/docs/reference/fieldtypes#variable-name) to [Value](/docs/reference/fieldtypes#value) |  |
+| Customization defaults | [Variable name](/docs/reference/fieldtypes#variable-name) to [Value](/docs/reference/fieldtypes#value) |  |
+| Moment schedule | [Moment](/docs/reference/resources#time) to [Time](/docs/reference/fieldtypes#time) |  |
 
 
 

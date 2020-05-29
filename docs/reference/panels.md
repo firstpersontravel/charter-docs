@@ -55,7 +55,7 @@ A multiple choice option. When selected by a user, the curresponding variable in
 | Field | Type | Description |
 | - | - | - |
 | **Text** | [Text](/docs/reference/fieldtypes#text) | Visible title for the choice. |
-| **Value ref** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
+| **Value ref** | [Variable name](/docs/reference/fieldtypes#variable-name) |  |
 | **Choices** | List |  |
 | **Choices → Value** | [Text](/docs/reference/fieldtypes#text) |  |
 | **Choices → Text** | [Text](/docs/reference/fieldtypes#text) |  |
@@ -80,7 +80,7 @@ Displays live directions for the given route.
 | Route | [Route](/docs/reference/resources#route) |  |
 | Waypoint | [Place](/docs/reference/resources#waypoint) |  |
 | Geofence | [Geofence](/docs/reference/resources#geofence) |  |
-| Destination name | [Text](/docs/reference/fieldtypes#text) |  |
+| Destination | [Text](/docs/reference/fieldtypes#text) |  |
 
 
 
@@ -159,7 +159,7 @@ A yes/no choice. When updated, the corresponding variable in the trip state will
 | Field | Type | Description |
 | - | - | - |
 | **Text** | [Text](/docs/reference/fieldtypes#text) |  |
-| **Save to variable name** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
+| **Save to variable name** | [Variable name](/docs/reference/fieldtypes#variable-name) |  |
 
 
 
