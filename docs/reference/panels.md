@@ -12,6 +12,7 @@ An audio clip that can be played at will.
 
 
 
+
 ## Browse messages
 
 A browsable interface of all messages for a role.
@@ -20,6 +21,7 @@ A browsable interface of all messages for a role.
 | Field | Type | Description |
 | - | - | - |
 | As | [Role](/docs/reference/resources#role) | Which role to view messages as. Defaults to current player. |
+
 
 
 ## Browse subpages
@@ -32,6 +34,7 @@ An index page of subpages. The user can browse through all visible subpages matc
 | **Section** | [Text](/docs/reference/fieldtypes#text) |  |
 
 
+
 ## Button
 
 A button.
@@ -41,6 +44,7 @@ A button.
 | - | - | - |
 | **Text** | [Text](/docs/reference/fieldtypes#text) | Visible label on the button. |
 | Style | `solo` |  |
+
 
 
 ## Choice
@@ -57,9 +61,11 @@ A multiple choice option. When selected by a user, the curresponding variable in
 | **Choices → Text** | [Text](/docs/reference/fieldtypes#text) |  |
 
 
+
 ## Current page
 
 The current page for this player. Should only be used as part of an interface.
+
 
 
 
@@ -72,9 +78,10 @@ Displays live directions for the given route.
 | Field | Type | Description |
 | - | - | - |
 | Route | [Route](/docs/reference/resources#route) |  |
-| Waypoint | [Waypoint](/docs/reference/resources#waypoint) |  |
+| Waypoint | [Place](/docs/reference/resources#waypoint) |  |
 | Geofence | [Geofence](/docs/reference/resources#geofence) |  |
 | Destination name | [Text](/docs/reference/fieldtypes#text) |  |
+
 
 
 ## Image
@@ -85,6 +92,7 @@ An image.
 | Field | Type | Description |
 | - | - | - |
 | Style | `float-right` |  |
+
 
 
 ## Message thread
@@ -98,6 +106,7 @@ All messages between two roles.
 | As | [Role](/docs/reference/resources#role) | Which role to view messages as. Defaults to current player. |
 
 
+
 ## Number entry
 
 A number input.
@@ -107,6 +116,7 @@ A number input.
 | - | - | - |
 | Submit button label | [Text](/docs/reference/fieldtypes#text) |  |
 | Placeholder text | [Text](/docs/reference/fieldtypes#text) |  |
+
 
 
 ## Text
@@ -120,6 +130,7 @@ A simple text.
 | Style | `centered` or `banner` | Choose centered to center your text, or banner to give it a highlighted background. |
 
 
+
 ## Text entry
 
 A text entry field.
@@ -131,9 +142,11 @@ A text entry field.
 | Placeholder text | [Text](/docs/reference/fieldtypes#text) |  |
 
 
+
 ## Video
 
 A video.
+
 
 
 
@@ -147,5 +160,6 @@ A yes/no choice. When updated, the corresponding variable in the trip state will
 | - | - | - |
 | **Text** | [Text](/docs/reference/fieldtypes#text) |  |
 | **Save to variable name** | [Simple attribute](/docs/reference/fieldtypes#simple-attribute) |  |
+
 
 

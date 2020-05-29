@@ -15,6 +15,7 @@ Condition passes only if all the subconditions pass.
 | Items | [[Condition](/docs/reference/conditions)] | A list of subconditions, all of which must be true. |
 
 
+
 ## Clip answer is
 
 Condition passes if the response to the clip being answered contains any part of the 'response' parameter.
@@ -23,6 +24,7 @@ Condition passes if the response to the clip being answered contains any part of
 | Field | Type | Description |
 | - | - | - |
 | **Response** | [Text](/docs/reference/fieldtypes#text) | A simple string to check for within the clip response. |
+
 
 
 ## Current role is
@@ -35,6 +37,7 @@ Condition passes if the current player has a specific role.
 | **Role name** | [Role](/docs/reference/resources#role) | The role to check against the current player. |
 
 
+
 ## Not
 
 Condition passes if the subcondition does not pass.
@@ -45,6 +48,7 @@ Condition passes if the subcondition does not pass.
 | **Item** | [Condition](/docs/reference/conditions) | A subcondition, which must be false. |
 
 
+
 ## Or
 
 Condition passes if any of the subconditions pass.
@@ -53,6 +57,7 @@ Condition passes if any of the subconditions pass.
 | Field | Type | Description |
 | - | - | - |
 | Items | [[Condition](/docs/reference/conditions)] | A list of subconditions, one of which must be true. |
+
 
 
 ## Role in geofence
@@ -66,6 +71,7 @@ Condition passes if a role is within a geofence.
 | **Geofence** | [Geofence](/docs/reference/resources#geofence) | The geofence that a player with this role must be within. |
 
 
+
 ## Role page is
 
 Condition passes if a role is on a specific page.
@@ -75,6 +81,7 @@ Condition passes if a role is on a specific page.
 | - | - | - |
 | **Role name** | [Role](/docs/reference/resources#role) | The role to check. |
 | **Page name** | [Page](/docs/reference/resources#page) | The page that this role must be on. |
+
 
 
 ## Submission contains
@@ -87,6 +94,7 @@ Condition passes if the submission contains any part of the 'part' parameter.
 | **Part** | [Text](/docs/reference/fieldtypes#text) | A text fragment which must be contained by the submission. |
 
 
+
 ## Text contains
 
 Condition passes if the content to the text contains any part of the 'part' parameter.
@@ -97,9 +105,11 @@ Condition passes if the content to the text contains any part of the 'part' para
 | **Part** | [Text](/docs/reference/fieldtypes#text) | A fragment of text to look for in the text response. |
 
 
+
 ## Text is affirmative
 
 Condition passes if the content to the text seems affirmitive (contains 'yes', 'ok', 'sure', etc.
+
 
 
 
@@ -115,6 +125,7 @@ Condition passes if the value in 'string_ref' contains the part in 'part_ref'. I
 | **For** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up which should contain the fragment to check for. In cases of a specific string, surround it with double quotes. |
 
 
+
 ## Value equals
 
 Condition passes if the value in 'ref1' matches the value in 'ref2'. If 'ref1' or 'ref2' are surrounded by double quotes, or are a number, or "true" or "false", then the value in the other reference will be matched to that simple value rather performing two lookups.
@@ -126,6 +137,7 @@ Condition passes if the value in 'ref1' matches the value in 'ref2'. If 'ref1' o
 | **Value 2** | [Lookup](/docs/reference/fieldtypes#lookup) | Another value to look up and compare against the first. In cases of a specific string, surround it with double quotes. |
 
 
+
 ## Value is true
 
 Condition passes if the value has any entry that is not false.
@@ -134,5 +146,6 @@ Condition passes if the value has any entry that is not false.
 | Field | Type | Description |
 | - | - | - |
 | **Value** | [Lookup](/docs/reference/fieldtypes#lookup) | A value to look up and see if it contains any non-false value. |
+
 
 

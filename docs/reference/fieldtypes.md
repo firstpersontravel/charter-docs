@@ -12,9 +12,11 @@ A geocodable address, including city, state and ZIP/postal code. For example: "1
 
 
 
+
 ## Boolean
 
 A simple true or false value.
+
 
 
 
@@ -26,9 +28,11 @@ Latitude/longitude coordinates.
 
 
 
+
 ## Email
 
 An email address. For example, "agency@firstperson.travel".
+
 
 
 
@@ -40,9 +44,11 @@ A field allowing a choice between a limited set of values. The specific set of o
 
 
 
+
 ## Integer
 
 A simple integer value: 0, 100, -50, etc.
+
 
 
 
@@ -54,9 +60,11 @@ A machine-readable name used for looking up variables. Only letters, numbers, da
 
 
 
+
 ## Markdown
 
 Text styled with markdown. See https://www.markdownguide.org/basic-syntax/ for help on how to use markdown.
+
 
 
 
@@ -68,9 +76,11 @@ Uploaded media: an image, video, or audio clip.
 
 
 
+
 ## Name
 
 A machine-readable name used for naming variables. Only letters, numbers, dashes or underscores are allowed.
+
 
 
 
@@ -82,9 +92,11 @@ An integer or number with a decimal.
 
 
 
+
 ## Simple attribute
 
 A machine-readable name used for naming variables. Only letters, numbers, or underscores are allowed.
+
 
 
 
@@ -96,9 +108,11 @@ A field that can be a string, number, or "true" or "false".
 
 
 
+
 ## Text
 
 Arbitrary text, usually for display to a participant.
+
 
 
 
@@ -110,9 +124,11 @@ An offset of time indicated in a brief shorthand of number and unit. For instanc
 
 
 
+
 ## Time shorthand
 
 A shorthand clock time, as defined in days relative to the start of the experience. For instance, "3:00pm" means 3pm the day of the experience. "5:30am" means 5:30am the day of the experience. "+1d 4:15pm" means 4:15pm the day after the day the experience started.
+
 
 
 
