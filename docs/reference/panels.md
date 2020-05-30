@@ -55,7 +55,7 @@ A multiple choice option. When selected by a user, the curresponding variable in
 | Field | Type | Description |
 | - | - | - |
 | **Text** | [Text](/docs/reference/fieldtypes#text) | Visible title for the choice. |
-| **Value ref** | [Variable name](/docs/reference/fieldtypes#variable-name) |  |
+| **Save to variable name** | [Variable name](/docs/reference/fieldtypes#variable-name) |  |
 | **Choices** | List |  |
 | **Choices → Value** | [Text](/docs/reference/fieldtypes#text) |  |
 | **Choices → Text** | [Text](/docs/reference/fieldtypes#text) |  |
@@ -151,7 +151,7 @@ A video.
 
 
 
-## Yesno
+## Yes or no
 
 A yes/no choice. When updated, the corresponding variable in the trip state will be updated.
 

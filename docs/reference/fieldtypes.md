@@ -1,7 +1,7 @@
 ---
 id: fieldtypes
-title: Field Types
-sidebar_label: Field Types
+title: Field types
+sidebar_label: Field types
 ---
 
 Fields are the underlying data elements of each object in your script. Each is validated in a different way.

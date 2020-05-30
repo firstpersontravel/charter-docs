@@ -16,4 +16,4 @@ Charter allows you to:
 
 Whether you're making immersive theater, A remote live game, museum exhibits, escape rooms, retail activations, team-building activities, or mixed-reality games, we hope Charter can be useful for you!
 
-Continue to [Creating projects](/docs/concepts/project) to get a broad overview of Charter, or you can jump right into the [Hello World tutorial](/docs/tutorials/hello-world) to make your first experience!
+Continue to [Creating projects](/docs/concepts/creating) to get a broad overview of Charter, or you can jump right into the [Starter tutorial](/docs/tutorials/starter) to make your first experience!

@@ -19,7 +19,7 @@ module.exports = {
         label: 'Concepts',
         position: 'left',
       }, {
-        to: 'docs/tutorials/hello-world',
+        to: 'docs/tutorials/starter',
         activeBasePath: 'docs/tutorials',
         label: 'Tutorials',
         position: 'left',

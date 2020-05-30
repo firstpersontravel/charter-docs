@@ -1,16 +1,10 @@
 ---
-id: project
-title: Creating Projects
-sidebar_label: Creating Projects
+id: global
+title: Global elements
+sidebar_label: Global elements
 ---
 
-## Project
-
-Charter projects are created in two main areas of the Creation interface: the "Project" area, which is described here, and the "Scenes" area, which is described on the next page.
-
-The Project area covers all elements in your experience that are shared across the entire experience.
-
-Scenes, on the other hand, are intervals in your experience that may differ greatly in how they operate. Aspects of your project that are only active during a particular scene are edited in the Scenes area of the creation tool, and are discussed on the [next page](/docs/concepts/scenes).
+Global elements are all elements in your experience that are shared across the entire experience and all scenes.
 
 ## Roles
 
@@ -54,6 +48,8 @@ The simple default Interface just shows a role's current page. If you want, you 
 
 You can also set an interface as an "Entryway" if you like. If checked, Charter will make a web form available where new participants can join your experience.
 
+An Interface can be shared across multiple roles. For instance, if you have four subgroups of participants that are in different places in the story, you can let them share the same Interface. Then each subgroup or role will be viewing a different slide in the deck, but they will share the deck, so you won't need to duplicate your work.
+
 ## Places
 
 The Places section of the interface is where you define locations for real-world, site specific experiences. If your experience is fully remote, or does not depend on geolocation or directions, you can skip this section entirely.
@@ -90,6 +86,6 @@ A [Variant](/docs/reference/resources#variant) is a set of default values for yo
 
 Each variant has a few sections.
 
-* **Variable defaults** define initial values for variables, which can then be read using conditionals like [Variable contains](/docs/reference/conditions#variable-contains), inserted into displays or messages using [Special values](/docs/concepts/specialvalues), and updated using actions like [Set variable](/docs/reference/actions#set_value).
-* **Customization defaults** allow you to define default values for customizations. Customizations are for text values that you want to be able to set and edit as experience administrators in the Operations view. For instance, you could use a customization to enter the food preferences of a guest, or their license plate number. Customizations can be inserted into displays or messages using [Special values](/docs/concepts/specialvalues), but cannot be updated within the experience itself.
+* **Variable defaults** define initial values for variables, which can then be read using conditionals like [Variable contains](/docs/reference/conditions#variable-contains), inserted into displays or messages using [Text insertions](/docs/concepts/textinsertions), and updated using actions like [Set variable](/docs/reference/actions#set_value).
+* **Customization defaults** allow you to define default values for customizations. Customizations are for text values that you want to be able to set and edit as experience administrators in the Operations view. For instance, you could use a customization to enter the food preferences of a guest, or their license plate number. Customizations can be inserted into displays or messages using [Text insertions](/docs/concepts/textinsertions), but cannot be updated within the experience itself.
 * **Moment schedule** defines clock times for each Moment in your experience, relative to the start date and time zone of each run. So you would specify `3:00pm` or `12:45am`, which would be interpreted as that time on the day of the experience. You can specify clock times in subsequent days by using a value such as `+1d 3:00pm`, or `+2d 7:15am`.

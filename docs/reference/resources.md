@@ -22,7 +22,7 @@ A fires when a defined event occurs. Once fired, it will apply a set of actions,
 
 ## Call clip
 
-A unit of text or audio that can be played as part of phone calls.
+A snippet of audio that can be played as part of phone calls.
 
 
 | Field | Type | Description |
@@ -34,8 +34,8 @@ A unit of text or audio that can be played as part of phone calls.
 | Answer expected | [Boolean](/docs/reference/fieldtypes#boolean) | Is an answer expected for this clip? |
 | Answer hints | [[Text](/docs/reference/fieldtypes#text)] | List of suggestions for decoding the voice of the answer. |
 
-* The `Clip` field of the [Play clip](/docs/reference/actions#play_clip) action is a Call clip.
-* The `Clip` field of the [Clip answered](/docs/reference/events#clip_answered) event is a Call clip.
+* The `Clip` field of the [Play call clip](/docs/reference/actions#play_clip) action is a Call clip.
+* The `Clip` field of the [Call clip answered](/docs/reference/events#clip_answered) event is a Call clip.
 
 
 ## Cue
@@ -223,10 +223,10 @@ A page that can be displayed in a list inside a Content Browse page.
 
 | Field | Type | Description |
 | - | - | - |
-| **Interface** | [Interface](/docs/reference/resources#interface) | The parent interface in which this content page is displayed. |
-| **Section** | [Text](/docs/reference/fieldtypes#text) | A string indicating which a grouping for this content page. The the `content_browse` panel will show all visible content pages grouped by section. |
+| **Interface** | [Interface](/docs/reference/resources#interface) | The parent interface in which this subpage is displayed. |
+| **Section** | [Text](/docs/reference/fieldtypes#text) | A string indicating which a grouping for this subpage. The the "Browse Subpages" panel will show all visible subpages grouped by section. |
 | Visible if | [Condition](/docs/reference/conditions) | An optional test to determine if the panel is visible or not. |
-| Panels | [[Panel](/docs/reference/panels)] | List of user interface panels. |
+| Panels | [[Panel](/docs/reference/panels)] | Content of the subpage. |
 
 
 

@@ -2,22 +2,25 @@ module.exports = {
   sidebar: {
     Concepts: [
       'concepts/overview',
-      'concepts/project',
+      'concepts/creating',
+      'concepts/global',
       'concepts/scenes',
       'concepts/behaviors',
       'concepts/pages',
-      'concepts/specialvalues',
-      'concepts/operations'
+      'concepts/textinsertions',
+      'concepts/operating'
     ],
     Tutorials: [
-      'tutorials/hello-world',
+      'tutorials/starter',
       'tutorials/text-convo',
       'tutorials/phone-tree',
       'tutorials/puzzle-sequence',
       'tutorials/walking-tour',
-      'tutorials/tabbed-interface',
+      'tutorials/custom-interface',
       'tutorials/actor-interaction',
-      'tutorials/taco-syndicate'
+    ],
+    Examples: [
+      'examples/taco-syndicate'    
     ],
     Reference: [
       'reference/resources',

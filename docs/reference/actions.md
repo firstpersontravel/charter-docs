@@ -16,19 +16,19 @@ Add a player to a conference call.
 
 
 
-## Conditional
+## Branch
 
-A conditional branch.
+A branch performs certain actions if an associated condition passes, and others if it does not.
 
 
 | Field | Type | Description |
 | - | - | - |
-| If | [Condition](/docs/reference/conditions) |  |
-| Actions | [[Action](/docs/reference/actions)] |  |
-| Elseifs | List |  |
-| Elseifs → If | [Condition](/docs/reference/conditions) |  |
-| Elseifs → Actions | [[Action](/docs/reference/actions)] |  |
-| Else | [[Action](/docs/reference/actions)] |  |
+| If | [Condition](/docs/reference/conditions) | The primary condition evaluated first. |
+| Actions | [[Action](/docs/reference/actions)] | Actions executed if the primary condition passes. |
+| Elseifs | List | A list of conditions and actions that are evaluated in order if the primary condition fails. |
+| Elseifs → If | [Condition](/docs/reference/conditions) | A condition to evaluate. |
+| Elseifs → Actions | [[Action](/docs/reference/actions)] | Actions to execute if the condition of this Else If field passes. |
+| Else | [[Action](/docs/reference/actions)] | Actions executed if the primary condition and all Else If conditions fail. |
 
 
 
@@ -46,7 +46,7 @@ Increment the numerical value of a value by reference.
 
 ## Initiate call
 
-Initiate a call from one player to another.
+Initiate a call from Charter to a user.
 
 
 | Field | Type | Description |
@@ -78,9 +78,9 @@ Start playing audio for a certain role.
 
 
 
-## Play clip
+## Play call clip
 
-Play a clip on an active phone call.
+Play a call clip on an active phone call.
 
 
 | Field | Type | Description |
@@ -170,8 +170,8 @@ Update a variable in the trip state to either a constant number or string, or to
 
 | Field | Type | Description |
 | - | - | - |
-| **Name** | [Variable name](/docs/reference/fieldtypes#variable-name) |  |
-| **To** | [Lookup](/docs/reference/fieldtypes#lookup) |  |
+| **Name** | [Variable name](/docs/reference/fieldtypes#variable-name) | The name of the variable to set. |
+| **To** | [Lookup](/docs/reference/fieldtypes#lookup) | The name of a variable, the value of which we want to look up and use for the value to set. Or a specific number, true, false, or text surrounded by double quotes. |
 
 
 
@@ -193,7 +193,7 @@ Start a new scene.
 
 | Field | Type | Description |
 | - | - | - |
-| **Scene** | [Scene](/docs/reference/resources#scene) |  |
+| **Scene** | [Scene](/docs/reference/resources#scene) | The scene to start. |
 
 
 

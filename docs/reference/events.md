@@ -24,13 +24,25 @@ Occurs when a button has been pressed.
 
 | Field | Type | Description |
 | - | - | - |
-| **Button** | [Button Panel](/docs/reference/panels#button) | The button that was pressed. |
+| **Button** | [Button panel](/docs/reference/panels#button) | The button that was pressed. |
+
+
+
+## Call clip answered
+
+Occurs when a player responds to a clip over the phone.
+
+
+| Field | Type | Description |
+| - | - | - |
+| **Clip** | [Call clip](/docs/reference/resources#clip) |  |
+| Allow partial | [Boolean](/docs/reference/fieldtypes#boolean) |  |
 
 
 
 ## Call answered
 
-Occurs when a player answers a call.
+Occurs when a users answers a call initiated by Charter.
 
 
 | Field | Type | Description |
@@ -53,25 +65,13 @@ Occurs when a player hangs up the phone.
 
 ## Call received
 
-Occurs when a player receives a call.
+Occurs when Charter receives a call initiated by a user.
 
 
 | Field | Type | Description |
 | - | - | - |
 | **From** | [Role](/docs/reference/resources#role) | The player who initiated the call. |
 | **To** | [Role](/docs/reference/resources#role) | The player receiving the call. |
-
-
-
-## Clip answered
-
-Occurs when a player responds to a clip over the phone.
-
-
-| Field | Type | Description |
-| - | - | - |
-| **Clip** | [Call clip](/docs/reference/resources#clip) |  |
-| Allow partial | [Boolean](/docs/reference/fieldtypes#boolean) |  |
 
 
 
@@ -93,7 +93,7 @@ Occurs when a user confirms arrival at a destination.
 
 | Field | Type | Description |
 | - | - | - |
-| **Directions** | [Directions Panel](/docs/reference/panels#directions) | The directions that were completed. |
+| **Directions** | [Directions panel](/docs/reference/panels#directions) | The directions that were completed. |
 
 
 
@@ -133,14 +133,14 @@ Occurs when the current clock time reaches a scheduled moment.
 
 
 
-## Numberpad submitted
+## Number entry submitted
 
-Occurs when a user confirms a number on a numberpad.
+Occurs when a user confirms a number on a number entry.
 
 
 | Field | Type | Description |
 | - | - | - |
-| **Numberpad** | [Numberpad Panel](/docs/reference/panels#numberpad) | The numberpad that was submitted. |
+| **Number entry** | [Number entry panel](/docs/reference/panels#numberpad) | The number entry that was submitted. |
 
 
 
@@ -159,7 +159,7 @@ Occurs when a user confirms text on a text entry field.
 
 | Field | Type | Description |
 | - | - | - |
-| **Text entry** | [Text entry Panel](/docs/reference/panels#text-entry) | The text_entry that was submitted. |
+| **Text entry** | [Text entry panel](/docs/reference/panels#text-entry) | The text_entry that was submitted. |
 
 
 

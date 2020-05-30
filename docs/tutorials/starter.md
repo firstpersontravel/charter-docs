@@ -1,7 +1,7 @@
 ---
-id: hello-world
-title: Hello World
-sidebar_label: Hello World
+id: starter
+title: Starter project
+sidebar_label: Starter project
 ---
 
 Let's get started with Charter by creating a "Hello World" project, where our players will see a welcome page with some content determined by you.
