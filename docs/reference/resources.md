@@ -176,7 +176,7 @@ A participant in the experience. This participant can be a player, an actor, or 
 * The `From` field of the [Send text](/docs/reference/actions#send_text) action is a Role.
 * The `From` field of the [Send image](/docs/reference/actions#send_image) action is a Role.
 * The `From` field of the [Send audio](/docs/reference/actions#send_audio) action is a Role.
-* The `Role` field of the [Update interface](/docs/reference/actions#update_interface) action is a Role.
+* The `Role` field of the [Focus tab](/docs/reference/actions#update_interface) action is a Role.
 * The `Role` field of the [Send to page](/docs/reference/actions#send_to_page) action is a Role.
 * The `From` field of the [Call answered](/docs/reference/events#call_answered) event is a Role.
 * The `From` field of the [Call received](/docs/reference/events#call_received) event is a Role.

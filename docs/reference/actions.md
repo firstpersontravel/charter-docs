@@ -32,6 +32,18 @@ A branch performs certain actions if an associated condition passes, and others 
 
 
 
+## Focus tab
+
+Bring up a specific tab on an interface.
+
+
+| Field | Type | Description |
+| - | - | - |
+| **Role** | [Role](/docs/reference/resources#role) | The role to apply the change to. |
+| **New value** | [Text](/docs/reference/fieldtypes#text) | The title of the tab to focus. |
+
+
+
 ## Increment variable
 
 Increment the numerical value of a value by reference.
@@ -205,18 +217,6 @@ Stop audio and reset audio state.
 | Field | Type | Description |
 | - | - | - |
 | **Role** | [Role](/docs/reference/resources#role) | The role to stop the audio for. |
-
-
-
-## Update interface
-
-Set the state of an interface. For tabbed interfaces, this sets the current tab.
-
-
-| Field | Type | Description |
-| - | - | - |
-| **Role** | [Role](/docs/reference/resources#role) | The role to send the new interface state to. |
-| **New value** | [Text](/docs/reference/fieldtypes#text) | The new interface state. For tabbed interfaces, the name of the tab. |
 
 
 
