@@ -13,15 +13,15 @@ module.exports = {
     Tutorials: [
       'tutorials/starter',
       'tutorials/text-convo',
-      'tutorials/phone-tree',
-      'tutorials/puzzle-sequence',
-      'tutorials/walking-tour',
-      'tutorials/custom-interface',
-      'tutorials/actor-interaction',
+      // 'tutorials/phone-tree',
+      // 'tutorials/puzzle-sequence',
+      // 'tutorials/walking-tour',
+      // 'tutorials/custom-interface',
+      // 'tutorials/actor-interaction',
     ],
-    Examples: [
-      'examples/taco-syndicate'    
-    ],
+    // Examples: [
+    //   'examples/taco-syndicate'    
+    // ],
     Reference: [
       'reference/resources',
       'reference/actions',
