@@ -24,6 +24,15 @@ You can include some insertions for the current player.
 * `{{player.headline}}`: The headline of the player's current page.
 * `{{player.phone_number}}`: The player's phone number.
 
+## Role insertions
+
+You can insert some insertions referencing any role in your project.
+
+* `{{<role_slug>.link}}` A link to see the current interface of the desired role.
+* `{{<role_slug>.join_link}}` A custom link that will let new participants join the current run of your project, as the desired role.
+
+You reference the role with a 'slugified' version of your role title. This is the role's title, lower-case, with all spaces turned into underscores. All non-alphanumeric characters are omitted. For instance, `Player` becomes `player`, and `Fred's Fancy Furniture` becomes `freds_fancy_furniture`.
+
 ## Event insertions
 
 When actions are triggered by events, you can access some insertions unique to those events.
