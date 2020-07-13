@@ -10,6 +10,9 @@ A panel is the core component for user experience in Charter. Each page is compr
 An audio clip that can be played at will.
 
 
+| Field | Type | Description |
+| - | - | - |
+| Audio | [Media](/docs/reference/fieldtypes#media) | The audio file to play. |
 
 
 
@@ -91,6 +94,7 @@ An image.
 
 | Field | Type | Description |
 | - | - | - |
+| Image | [Media](/docs/reference/fieldtypes#media) |  |
 | Style | `float-right` |  |
 
 
@@ -148,6 +152,9 @@ A text entry field.
 A video.
 
 
+| Field | Type | Description |
+| - | - | - |
+| Video | [Media](/docs/reference/fieldtypes#media) |  |
 
 
 

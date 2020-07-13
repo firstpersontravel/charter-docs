@@ -30,7 +30,7 @@ A snippet of audio that can be played as part of phone calls.
 | **Scene** | [Scene](/docs/reference/resources#scene) | The scene at which this clip will be played. |
 | Transcript | [Text](/docs/reference/fieldtypes#text) | The text transcript used to generate audio via speech-to-text. Only required if there is not a media path. |
 | Voice | `alice`, `man` or `woman` | The voice used to generate audio via speech-to-text. Only required if there is not a media path. |
-| Path | [Media](/docs/reference/fieldtypes#media) | Media path for an audio clip to play. |
+| Audio | [Media](/docs/reference/fieldtypes#media) | The audio clip to play. |
 | Answer expected | [Boolean](/docs/reference/fieldtypes#boolean) | Is an answer expected for this clip? |
 | Answer hints | [[Text](/docs/reference/fieldtypes#text)] | List of suggestions for decoding the voice of the answer. |
 
@@ -91,6 +91,12 @@ A combination of panels that create a user interface for a tablet, phone, or dev
 | **Tabs → Title** | [Text](/docs/reference/fieldtypes#text) | The title of this tab. |
 | Tabs → Visible if | [Condition](/docs/reference/conditions) | An optional test to determine if the tab is visible or not. |
 | Tabs → Panels | [[Panel](/docs/reference/panels)] | List of user interface panels. |
+| Background color | [Color](/docs/reference/fieldtypes#color) | Color to use for the background of your interface. |
+| Header color | [Color](/docs/reference/fieldtypes#color) | Color to use for the navigation elements of your interface: the header and tabs. |
+| Active color | [Color](/docs/reference/fieldtypes#color) | Color to use for active areas like the selected tab. |
+| Primary color | [Color](/docs/reference/fieldtypes#color) | Color to use for primary actions like buttons. |
+| Font family | `Arvo`, `BioRhyme`, `Courier Prime`, `Crimson`, `Inconsolata`, `Inter`, `Lora`, `Montserrat`, `Playfair`, `Raleway`, `Roboto`, `Source Sans` or `Work Sans` | The font family to use for text in your interface. |
+| Custom css | [Text](/docs/reference/fieldtypes#text) | Supply any custom styles to be inserted into your interface. |
 
 
 
@@ -147,9 +153,7 @@ A place used by the trip. Each place can have multiple locations that can be set
 | Field | Type | Description |
 | - | - | - |
 | Locations | List | A list of locations that this place could refer to. |
-| **Locations → Address** | [Address](/docs/reference/fieldtypes#address) | The address of the location. |
-| Locations → Title | [Text](/docs/reference/fieldtypes#text) | The title of this location for internal display. |
-| Locations → Variable defaults | [Variable name](/docs/reference/fieldtypes#variable-name) to [Value](/docs/reference/fieldtypes#value) | These values are accessible to a run when this location is selected. For instance, if there are directions associated with the various locations for a place, you could set those here. |
+| **Locations → Location** | [Location](/docs/reference/fieldtypes#location) | The address of the location. |
 
 
 

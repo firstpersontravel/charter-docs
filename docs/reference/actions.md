@@ -87,6 +87,7 @@ Start playing audio for a certain role.
 | Field | Type | Description |
 | - | - | - |
 | **Role** | [Role](/docs/reference/resources#role) | The role to play the audio for. |
+| Audio | [Media](/docs/reference/fieldtypes#media) | The audio file to play. |
 
 
 
@@ -121,6 +122,7 @@ Send an audio message from one player to another.
 | - | - | - |
 | **From** | [Role](/docs/reference/resources#role) | The role to send the message from. |
 | **To** | [Role](/docs/reference/resources#role) | The role to send the message to. |
+| Audio | [Media](/docs/reference/fieldtypes#media) | The content of the message to send. |
 
 
 
@@ -147,6 +149,7 @@ Send an image from one player to another.
 | - | - | - |
 | **From** | [Role](/docs/reference/resources#role) | The role to send the message from. |
 | **To** | [Role](/docs/reference/resources#role) | The role to send the message to. |
+| Image | [Media](/docs/reference/fieldtypes#media) | The content of the message to send. |
 
 
 

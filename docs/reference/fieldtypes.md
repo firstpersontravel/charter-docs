@@ -5,17 +5,17 @@ sidebar_label: Field types
 ---
 
 Fields are the underlying data elements of each object in your script. Each is validated in a different way.
-## Address
-
-A geocodable address, including city, state and ZIP/postal code. For example: "111 Main Street, San Francisco CA 94110".
-
-
-
-
-
 ## Boolean
 
 A simple true or false value.
+
+
+
+
+
+## Color
+
+A color, in hexadecimal format. (i.e. #FFFFFF)
 
 
 
@@ -56,6 +56,14 @@ A field allowing a choice between a limited set of values. The specific set of o
 ## Integer
 
 A simple integer value: 0, 100, -50, etc.
+
+
+
+
+
+## Location
+
+A geocodable address, including city, state and ZIP/postal code.
 
 
 
