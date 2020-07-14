@@ -90,6 +90,9 @@ module.exports = {
       },
     }],
   ],
+  scripts: [
+    '/js/analytics.js'
+  ],
   stylesheets: [
     '/css/fonts.css'
   ]
