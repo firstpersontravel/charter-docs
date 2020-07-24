@@ -34,6 +34,7 @@ An index page of subpages. The user can browse through all visible subpages matc
 
 | Field | Type | Description |
 | - | - | - |
+| **Title** | [Text](/docs/reference/fieldtypes#text) |  |
 | **Section** | [Text](/docs/reference/fieldtypes#text) |  |
 
 
@@ -120,6 +121,19 @@ A number input.
 | - | - | - |
 | Submit button label | [Text](/docs/reference/fieldtypes#text) |  |
 | Placeholder text | [Text](/docs/reference/fieldtypes#text) |  |
+
+
+
+## Room
+
+A room for audio/video conferencing.
+
+
+| Field | Type | Description |
+| - | - | - |
+| Name | [Text](/docs/reference/fieldtypes#text) | Optionally specify a name for your room to differentiate it from other rooms. If no name is supplied, a room will be shared for each run of your experience. |
+| Video | [Boolean](/docs/reference/fieldtypes#boolean) | Send/recieve video as well as audio. |
+| Transmit | [Boolean](/docs/reference/fieldtypes#boolean) | If true, the viewer of this panel will broadcast to other members of the room. |
 
 
 
