@@ -103,5 +103,5 @@ You've now created and tested your first immersive experience using Charter!
 
 From here, continue onto the next tutorials to learn more about all the functionality in Charter, from text and MMS messaging, to custom user interfaces, to location and mapping, and more.
 
-You can also go to the [Operating](/docs/concepts/operations) page to learn more about how to run your experiences live.
+You can also go to the [Operating](/docs/concepts/operating) page to learn more about how to run your experiences live.
 

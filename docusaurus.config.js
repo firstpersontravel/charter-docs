@@ -44,7 +44,7 @@ module.exports = {
         title: 'Charter Docs',
         items: [{
           label: 'Tutorials',
-          to: 'docs/tutorials',
+          to: 'docs/tutorials/starter',
         }, {
           label: 'Reference',
           to: 'docs/reference/resources',
