@@ -18,6 +18,7 @@ module.exports = {
       // 'tutorials/walking-tour',
       // 'tutorials/custom-interface',
       // 'tutorials/actor-interaction',
+      'tutorials/video-rooms'
     ],
     // Examples: [
     //   'examples/taco-syndicate'    

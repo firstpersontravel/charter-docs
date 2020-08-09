@@ -13,7 +13,7 @@ module.exports = {
         alt: 'Charter Docs',
         src: 'img/feather.png',
       },
-      links: [{
+      items: [{
         to: 'docs/concepts/overview',
         activeBasePath: 'docs/concepts',
         label: 'Concepts',
