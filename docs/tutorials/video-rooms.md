@@ -40,8 +40,6 @@ Click enter, give permissions, and you're in your new video room! Up to nine par
 
 ![Room entry](/img/tutorials/video-rooms/5-room.png)
 
-*(Stock photo courtesy depositphotos.com)*
-
 ## Add a view-only tab
 
 In the current setup, anyone viewing the room will both share and view audio and video. It's possible to have broadcast-style rooms as well, where one participant is sharing and the rest are viewing.
