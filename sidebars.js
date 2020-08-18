@@ -8,7 +8,9 @@ module.exports = {
       'concepts/behaviors',
       'concepts/pages',
       'concepts/textinsertions',
-      'concepts/operating'
+      'concepts/scheduling',
+      'concepts/operating',
+      'concepts/users'
     ],
     Tutorials: [
       'tutorials/starter',

@@ -4,24 +4,6 @@ title: Creating projects
 sidebar_label: Creating projects
 ---
 
-## Your workspace
-
-When you first load up Charter, you'll see a home page showing all the projects in your workspace. In new workspaces, you'll see a set of examples projects you can create to get started.
-
-![Home](/img/concepts/projects/home.png)
-
-## The navbar
-
-The Charter interface has a top bar for navigating across projects and within a project.
-
-![Home](/img/concepts/projects/navbar.png)
-
-* **The top-left dropdown** is for switching between your projects.
-* In **Create**, you create and preview your experience. We'll explore this section deeply in this page.
-* In **Schedule**, you can see all the past, present and future runs of your project.
-* The **Operate** tab is the command center for live runs of your project. It is described in the [Operating projects page](/docs/concepts/operating).
-* In **Users** you'll find a directory of all the participants that have ever signed up for your experience.
-
 ## Creating projects
 
 The creation tool in Charter is divided into three panels, a **Left pane** for navigating between the different areas of your project, a **Middle pane** for selecting specific resources in your project, and a **Right pane** for viewing and editing those resources.

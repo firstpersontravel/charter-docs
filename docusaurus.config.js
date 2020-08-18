@@ -74,16 +74,10 @@ module.exports = {
   presets: [
     ['@docusaurus/preset-classic', {
       docs: {
-        sidebarPath: require.resolve('./sidebars.js'),
-        // Please change this to your repo.
-        editUrl:
-          'https://github.com/firstpersontravel/charter-docs/edit/master/website/',
+        sidebarPath: require.resolve('./sidebars.js')
       },
       blog: {
-        showReadingTime: true,
-        // Please change this to your repo.
-        editUrl:
-          'https://github.com/firstpersontravel/charter-docs/edit/master/website/blog/',
+        showReadingTime: true
       },
       theme: {
         customCss: require.resolve('./src/css/custom.css'),
