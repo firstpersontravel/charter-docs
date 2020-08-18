@@ -22,6 +22,18 @@ Some example experience designs that will have different role setups:
 * An immersive theater type experience will have one role for each actor participant, and one or many roles for the audience.
 * A digital remote game might have one role for the player, and a role for each automated simulated character.
 
+### Interfaces
+
+If you want a role to be able to interact with your experience using a webpage, you need to add an [Interface](/docs/reference/resources#interface). An Interface creates the frame for viewing a web UI for your participants, and all aspects of this interface that will stay consistent over the entire experience, including color and styling.
+
+Over the course of your experience, you'll navigate participants between their various pages, each with different content. All of the pages that a participant can possibly see will be created within the interface associated with that participant's role.
+
+The simple default interface just shows a role's current page. If you want, you can make a more complex interface by adding tabs, and then your participant will be able to switch between the tabs at-will. For instance, you might have one tab that is the current page, one for browsing messages, and another that's simple help text.
+
+You can also set an interface as an "Entryway" if you like. If checked, Charter will make a web form available where new participants can join your experience.
+
+An interface can be shared across multiple roles. For instance, if you have four subgroups of participants that are in different places in the story, you can let them share the same Interface. Then each subgroup or role will be viewing a different slide in the deck, but they will share the deck, so you won't need to duplicate your work.
+
 ### Phone lines
 
 Once you've created a role, if you want users with that role to text message or have phone calls with another participant, you'll need to add a [Phone line](/docs/reference/resources#phone-line). Roles can have multiple phone lines with different other roles: in this case a different phone number will be assigned to each counterpart.
@@ -32,27 +44,17 @@ Each phone line also has a "Counterpart": that is the role who messages and phon
 
 Say, for instance, if there is a phone line for the "Player" role with a "Guide" role as its counterpart. If the Guide sends a message to the Player, it will be sent to the user in the Player role's phone number if present. And if that user responds, the incoming message will be sent back to the "Guide" role, and a [Text received](/docs/reference/events#text-received) event will occur.
 
-Optionally, a phone line can have an "Impersonating" value. This is used in case you want to CC certain roles on communications between two other roles. So, for instance, you could have a phone line for your "StageManager" role, with a counterpart of the "Player", and impersonating an "Actor" role. In that case, if the stage manager user texts that phone line, the message will be sent to the player *as if* the actor user had texted it.
+Optionally, a phone line can have an "Impersonating" value. For instance, you could have a phone line for your "StageManager" role, with a counterpart of the "Player", and impersonating an "Actor" role. In that case, if the stage manager user texts that phone line, the message will be sent to the player *as if* the actor user had texted it.
 
-Normally, phone lines are allocated dynamically and may be different for each participant. If you want a public phone number for your experience that will always be the same, you may configure a phone as an "Entryway" by checking that option. Entryway phone lines will always be the same, and can be used too start new runs of your experience. Any user who texts or calls the number of an entryway phone line will start a new run of your experience, and will be added as a new player.
+Normally, phone lines are allocated dynamically and may be different for each participant. If you want a public phone number for your experience that will always be the same, you may configure a phone as an "Entryway" by checking that option. Entryway phone lines will always be the same, and can be used to start new runs of your experience. Any user who texts or calls the number of an entryway phone line will start a new run of your experience, and will be added as a new player.
 
 ### Email accounts
 
 If you want a role to be able to send and receive emails, you can add an [Email account](/docs/reference/resources#email-account). The specific email address cannot be customized at the moment, but that ability is on our roadmap.
 
-### Interfaces
-
-If you want a role to be able to interact with your experience using a webpage, you need to add an [Interface](/docs/reference/resources#interface). You can think of an Interface as a slide deck: every role that has an Interface has an associated set of slides, called Pages in Charter. Over the course of your experience, you'll navigate roles between their various pages. All of the pages that a role can possibly see will be created within that associated Interface.
-
-The simple default Interface just shows a role's current page. If you want, you can make a more complex interface by adding tabs, and then your participant will be able to switch between the tabs at-will. For instance, you might have one tab that is the current page, one for browsing messages, and another that's simple help text.
-
-You can also set an interface as an "Entryway" if you like. If checked, Charter will make a web form available where new participants can join your experience.
-
-An Interface can be shared across multiple roles. For instance, if you have four subgroups of participants that are in different places in the story, you can let them share the same Interface. Then each subgroup or role will be viewing a different slide in the deck, but they will share the deck, so you won't need to duplicate your work.
-
 ## Places
 
-The Places section of the interface is where you define locations for real-world, site specific experiences. If your experience is fully remote, or does not depend on geolocation or directions, you can skip this section entirely.
+The Places section of the interface is where you define locations for real-world, site specific experiences, if those are used by your experience.
 
 ### Places
 

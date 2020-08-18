@@ -4,42 +4,63 @@ title: Creating projects
 sidebar_label: Creating projects
 ---
 
-## The Charter interface
+## Your workspace
+
+When you first load up Charter, you'll see a home page showing all the projects in your workspace. In new workspaces, you'll see a set of examples projects you can create to get started.
+
+![Home](/img/concepts/projects/home.png)
+
+## The navbar
 
 The Charter interface has a top bar for navigating across projects and within a project.
 
+![Home](/img/concepts/projects/navbar.png)
+
 * **The top-left dropdown** is for switching between your projects.
-* **Create** is for creating and previewing your experience, and is described here.
-* **Schedule** and **Operate** are for operating your experience, and are described in the [Operating projects page](/docs/concepts/operating).
-* **Users** is a directory of all the users that have signed up for your experience, searchable by role.
+* In **Create**, you create and preview your experience. We'll explore this section deeply in this page.
+* In **Schedule**, you can see all the past, present and future runs of your project.
+* The **Operate** tab is the command center for live runs of your project. It is described in the [Operating projects page](/docs/concepts/operating).
+* In **Users** you'll find a directory of all the participants that have ever signed up for your experience.
 
-![Interface](/img/interface.png)
+## Creating projects
 
-## Create
+The creation tool in Charter is divided into three panels, a **Left pane** for navigating between the different areas of your project, a **Middle pane** for selecting specific resources in your project, and a **Right pane** for viewing and editing those resources.
 
-The creation tool in Charter is divided into two areas.
+### Left pane
+
+![Left pane](/img/concepts/projects/leftpane.png)
 
 The Global elements area covers all elements in your experience that are shared across the entire experience. It's discussed in the [Global elements page](/docs/concepts/global).
 
 Scenes are intervals in your experience that may differ greatly in how they operate. Aspects of your project that are only active during a particular scene are edited in the Scenes area of the creation tool, and are discussed on the [Scenes page](/docs/concepts/scenes).
 
-In each area, the left pane is a global navigation. The middle pane shows each element within your subsection, and the right pane shows the particular element that you are viewing or editing.
+The first item of the Scenes area of this pane is a list of scenes, and this is where you can create and add new scenes. Each subsequence item in this area is a single scene, and when navigating to that scene, you can edit all the behaviors and other elements within that scene.
 
-## Preview
+### Middle pane
+
+![Middle pane](/img/concepts/projects/middlepane.png)
+
+In the middle pane, you'll find each different kind of resource in your project that you can edit,  grouped by type. Click on an existing resource to edit it, or the **Add resource** items to create new ones.
+
+### Right pane
+
+![Right pane](/img/concepts/projects/rightpane.png)
+
+The right pane shows you the specific resource you are editing. Changes are applied and saved automatically, unless there is a validation error, in which case the resource will not be saved until the error is corrected or reverted. Validation errors will be shown visibly if there are any present.
+
+## Previewing
 
 The preview area is a lightweight interface for testing your experience.
 
-![Preview](/img/preview.png)
+![Preview](/img/concepts/projects/preview.png)
 
-Each scene is organized as a vertical row, and each page for each role is a column within each row.
+Each scene is organized as a vertical row, and each page for each role is a column within each row. You can artificially trigger each behavior in the scene with the grey buttons in each scene row. And you can see a log of events that have transpired in your preview in the right-hand rail.
 
-You can artificially trigger each behavior in the scene with the grey buttons in each scene row.
+## Publishing
 
-And you can see a log of events that have transpired in your preview in the right-hand rail.
+Charter offers versioning and publishing tools on the top-right area.
 
-## Versioning
-
-Charter offers versioning tools on the top-right area.
+![Versioning](/img/concepts/projects/versioning.png)
 
 By default, you are editing the active version of your experience. This is what you most likely want during the early iteration phase of your development.
 

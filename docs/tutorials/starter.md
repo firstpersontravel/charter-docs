@@ -8,7 +8,7 @@ Let's get started with Charter by creating a "Hello World" project, where our pl
 
 We'll start with the "Blank" starter template, which contains absolutely no project content. And we'll create each element one by one until we reach our desired result. You can always view the expected result of this tutorial by creating a new project from the "Hello World" template.
 
-## Start a project
+## 1. Start a project
 
 From the Charter home page, click on "Create blank" to create a new project from the "Blank" template.
 
@@ -20,7 +20,7 @@ Name your project and click "Create".
 
 You now have a new project!
 
-## Add a player interface
+## 2. Add a player interface
 
 First, we'll create an Interface, which is basically a navigable mini-website in Charter that's customized for your players. Every Interface is a set of Pages, and you define in your project how to navigate the player between those Pages.
 
@@ -36,7 +36,7 @@ Once you've set these new fields for your interface, it gets its own link in the
 
 ![Add a new interface](/img/tutorials/hello-world/int-2.png)
 
-## Add a player role
+## 3. Add a player role
 
 Now we'll add a Role for your players. A Role in charter defines a specific part that the participants in your experience will play. For example, a single-player experience will probably have a single "Player" role. A competitive experience between two teams might have a "Team A" and "Team B" role, with multiple users in each role.
 
@@ -48,7 +48,7 @@ Set a title for your role: something like "Player". And set the role's interface
 
 ![Add a new interface](/img/tutorials/hello-world/role-2.png)
 
-## Add a first scene
+## 4. Add a first scene
 
 Navigate to **Scene list > Add scene**.
 
@@ -60,7 +60,7 @@ Create a title for your new scene. Scenes are automatically sorted alphabeticall
 
 Notice how this new scene is added to the scene list on the left.
 
-## Add a "Hello World" page
+## 5. Add a "Hello World" page
 
 Now navigate to your newly created scene in the **Scenes** section on the left-most navigation area.
 
@@ -77,7 +77,7 @@ Click **Add new (your interface name) page** (you should recognize the name of t
 
 ![Add a new interface](/img/tutorials/hello-world/page-3.png)
 
-## Preview your project
+## 6. Preview your project
 
 Navigate to the **Preview** tab at the top of the project editing page.
 
@@ -87,7 +87,7 @@ In the Preview section, you can see a quick overview of the layout of your exper
 
 ![Add a new interface](/img/tutorials/hello-world/preview-2.png)
 
-## Your first run!
+## 7. Your first run!
 
 Navigate to the **Schedule** page at the top bar of your interface.
 

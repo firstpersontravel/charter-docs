@@ -6,11 +6,11 @@ sidebar_label: Video rooms
 
 Charter has the capability of including Zoom or Google Meet style video or audio conferencing as part of your experience. Adding it is simple!
 
-## Start a project
+## 1. Start a project
 
 From the Charter home page, click on **Create blank** to create a new project from the "Blank" template. Name your project and click **Create**.
 
-## Create a video room
+## 2. Create a video room
 
 First, we'll add an interface, which is the definition of a web view that your participants can interact with on a phone or computer. Create a new interface named "Room Test".
 
@@ -18,13 +18,13 @@ First, we'll add an interface, which is the definition of a web view that your p
 
 Add a new tab, and title it "Transmit". Add a **Room** type panel, and you can keep the default values for now.
 
-## Create a role
+## 3. Create a role
 
 Now add a role for your viewers. Choose your "Room Test" as that role's **Interface**.
 
 ![Add a new role](/img/tutorials/video-rooms/2-role.png)
 
-## Preview your room
+## 4. Preview your room
 
 To preview your room, you'll need to start a run. Go to the **Schedule** tab, and create a **Run Group** and a new **Run**.
 
@@ -40,7 +40,7 @@ Click enter, give permissions, and you're in your new video room! Up to nine par
 
 ![Room entry](/img/tutorials/video-rooms/5-room.png)
 
-## Add a view-only tab
+## 5. Add a view-only tab
 
 In the current setup, anyone viewing the room will both share and view audio and video. It's possible to have broadcast-style rooms as well, where one participant is sharing and the rest are viewing.
 
@@ -48,7 +48,7 @@ Go back to your Interface in the Create tool, and add a new Tab. Name this tab "
 
 ![Room entry](/img/tutorials/video-rooms/6-interface.png)
 
-## Recieve-only rooms
+## 6. Recieve-only rooms
 
 Now, when you go to the preview of your room, you'll see two tabs at the bottom, "Transmit" and "Receive". Both are views into the same room, but if you have the left tab loaded, you'll share your video, and if you have the right tab loaded, you won't.
 
