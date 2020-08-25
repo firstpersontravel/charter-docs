@@ -32,6 +32,17 @@ A branch performs certain actions if an associated condition passes, and others 
 
 
 
+## Change role
+
+Change the current player from one role to another.
+
+
+| Field | Type | Description |
+| - | - | - |
+| **To** | [Role](/docs/reference/resources#role) | The role to change the player to. |
+
+
+
 ## Focus tab
 
 Bring up a specific tab on an interface.

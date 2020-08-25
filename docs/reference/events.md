@@ -109,6 +109,18 @@ Occurs when a player enters a geofenced region.
 
 
 
+## Geofence exited
+
+Occurs when a player exits a geofenced region.
+
+
+| Field | Type | Description |
+| - | - | - |
+| **Role** | [Role](/docs/reference/resources#role) | The role exiting the geofence. |
+| **Geofence** | [Geofence](/docs/reference/resources#geofence) | The geofence being exited. |
+
+
+
 ## Image received
 
 Occurs when an image message has been received.

@@ -77,6 +77,7 @@ A circular region around a waypoint. It can be used to trigger events when playe
 
 
 * The `Geofence` field of the [Geofence entered](/docs/reference/events#geofence_entered) event is a Geofence.
+* The `Geofence` field of the [Geofence exited](/docs/reference/events#geofence_exited) event is a Geofence.
 
 
 ## Interface
@@ -182,10 +183,12 @@ A participant in the experience. This participant can be a player, an actor, or 
 * The `From` field of the [Send audio](/docs/reference/actions#send_audio) action is a Role.
 * The `Role` field of the [Focus tab](/docs/reference/actions#update_interface) action is a Role.
 * The `Role` field of the [Send to page](/docs/reference/actions#send_to_page) action is a Role.
+* The `To` field of the [Change role](/docs/reference/actions#change_role) action is a Role.
 * The `From` field of the [Call answered](/docs/reference/events#call_answered) event is a Role.
 * The `From` field of the [Call received](/docs/reference/events#call_received) event is a Role.
 * The `Role` field of the [Call ended](/docs/reference/events#call_ended) event is a Role.
 * The `Role` field of the [Geofence entered](/docs/reference/events#geofence_entered) event is a Role.
+* The `Role` field of the [Geofence exited](/docs/reference/events#geofence_exited) event is a Role.
 * The `From` field of the [Text received](/docs/reference/events#text_received) event is a Role.
 * The `From` field of the [Image received](/docs/reference/events#image_received) event is a Role.
 * The `From` field of the [Audio received](/docs/reference/events#audio_received) event is a Role.
