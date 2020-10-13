@@ -32,6 +32,9 @@ module.exports = {
       'reference/panels',
       'reference/conditions',
       'reference/fieldtypes'
+    ],
+    Developers: [
+      'developers/api'
     ]
   },
 };
