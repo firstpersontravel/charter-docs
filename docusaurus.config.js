@@ -33,6 +33,11 @@ module.exports = {
         label: 'Updates',
         position: 'left'
       }, {
+        href: 'https://github.com/firstpersontravel/charter',
+        position: 'right',
+        className: 'header-github-link',
+        'aria-label': 'GitHub repository',
+      }, {
         href: 'https://charter.firstperson.travel',
         label: 'Back to Charter',
         position: 'right'
