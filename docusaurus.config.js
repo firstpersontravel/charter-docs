@@ -55,8 +55,8 @@ module.exports = {
           label: 'Use Charter',
           href: 'http://charter.firstperson.travel/',
         }, {
-          label: 'About Charter',
-          href: 'http://about.firstperson.travel/',
+          label: 'Github Repo',
+          href: 'https://github.com/firstpersontravel/charter',
         }, {
           label: 'Updates',
           to: 'blog',
