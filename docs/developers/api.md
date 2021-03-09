@@ -239,7 +239,7 @@ Use the apply event endpoint to trigger a particular event in your run: `POST /a
 
 The View API can be used to create thin display clients for showing Charter content. The View API exposes information only about the currently visible pages and panels for a particular player, meaning that the client does not need to evaluate any conditionals or template any text on its own.
 
-### Get Player View
+### Get player view
 
 The get player view endpoint will expose the currently visible tabs, pages, and panels, for a player: `GET /api/view/player/:id`.
 
