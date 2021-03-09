@@ -234,3 +234,46 @@ Use the apply event endpoint to trigger a particular event in your run: `POST /a
 | **player_id** | number | The ID of the player making the action |
 | **type** | string | The type of event being applied. |
 | ***** | string | Include all other fields of the event as named parameters. |
+
+## View API
+
+The View API can be used to create thin display clients for showing Charter content. The View API exposes information only about the currently visible pages and panels for a particular player, meaning that the client does not need to evaluate any conditionals or template any text on its own.
+
+### Get Player View
+
+The get player view endpoint will expose the currently visible tabs, pages, and panels, for a player: `GET /api/view/player/:id`.
+
+**Warning: this API is only partially implemented.**
+
+Example response:
+
+```json
+{
+  "data": {
+    "interface": {
+      "headline": "Wait for player to show up at lounge",
+      "style": {
+        "background_color": "#ffffff",
+        "accent_color": "#666666",
+        "primary_color": "#aa0000",
+        "font_family": "Raleway",
+        "custom_css": ""
+      },
+      "tabs": [
+        {
+          "title": "Main",
+          "panels": [
+            {
+              "id": 1,
+              "type": "text",
+              "data": {
+                "text": "This page will update when the player is at the lounge."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+```
