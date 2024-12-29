@@ -88,6 +88,7 @@ A combination of panels that create a user interface for a tablet, phone, or dev
 | Field | Type | Description |
 | - | - | - |
 | Entryway | [Boolean](/docs/reference/fieldtypes#boolean) | If set to true, new participants can enter your experience via a webform into this interface. |
+| Performer | [Boolean](/docs/reference/fieldtypes#boolean) | If set to true, performers can access this interface from the performer page. |
 | Tabs | List | A list of tabs. If there is only one tab visible, the tabs bar will not be displayed. |
 | **Tabs → Title** | [Text](/docs/reference/fieldtypes#text) | The title of this tab. |
 | Tabs → Visible if | [Condition](/docs/reference/conditions) | An optional test to determine if the tab is visible or not. |

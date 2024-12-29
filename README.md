@@ -19,6 +19,7 @@ This command starts a local development server and open up a browser window. Mos
 ### Build
 
 ```bash
+npm run generate
 npm build
 ```
 
@@ -28,6 +29,7 @@ This command generates static content into the `build` directory and can be serv
 
 ```bash
 export NODE_OPTIONS=--openssl-legacy-provider
+npm run generate
 npm run deploy
 ```
 

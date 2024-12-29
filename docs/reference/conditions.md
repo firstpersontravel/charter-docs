@@ -114,6 +114,19 @@ A condition that passes if the content to the text seems affirmitive (contains '
 
 
 
+## Value comparison
+
+A condition that passes if the first value numerically compares to the second in the specified way.
+
+
+| Field | Type | Description |
+| - | - | - |
+| **Variable name or number 1** | [Lookup](/docs/reference/fieldtypes#lookup) | A numeric value to look up and compare against the second. |
+| Comparator | `<`, `<=`, `==`, `>=` or `>` | The method used to compare the first value to the second. |
+| **Variable name or number 2** | [Lookup](/docs/reference/fieldtypes#lookup) | Another numeric value to look up and compare against the first. |
+
+
+
 ## Variable contains
 
 A condition that passes if the search variable value contains the part in the part variable. If 'string_ref' or 'part_ref' are surrounded by double quotes, or are a number, or "true" or "false", then the value in the other reference will be matched to that simple variable rather performing two lookups.

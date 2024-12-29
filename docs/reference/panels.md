@@ -124,19 +124,6 @@ A number input.
 
 
 
-## Room
-
-A room for audio/video conferencing.
-
-
-| Field | Type | Description |
-| - | - | - |
-| Name | [Text](/docs/reference/fieldtypes#text) | Optionally specify a name for your room to differentiate it from other rooms. If no name is supplied, a room will be shared for each run of your experience. |
-| Video | [Boolean](/docs/reference/fieldtypes#boolean) | Send/recieve video as well as audio. |
-| Transmit | [Boolean](/docs/reference/fieldtypes#boolean) | If true, the viewer of this panel will broadcast to other members of the room. |
-
-
-
 ## Text
 
 A simple text.
